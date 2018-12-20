@@ -1,0 +1,53 @@
+# site name
+siteName: kx-zyq
+shortName: KX
+
+menu:
+  首页: / || fa-fort-awesome || faa-horizontal
+  归档: /archives || fa-archive || faa-shake || archives
+
+archives:
+  技术: /tech || fa-terminal
+  生活: /live || fa-file-text-o
+
+# full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
+fullHttps: false
+
+# favicon and site master avatar
+favicon: 
+avatar: 
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10
+
+
+# your site build time or founded date
+siteBuildingTime: 07/17/2018
+
+
+# Top navigate menu name
+## Notice:
+## Name order decide show index.The name also called category alias,so you must set category alias before start server.
+## BTW,'category_map' and 'tag_map' field in site '_config.yml' file must one to one correspondence with menus below.
+# menu:
+#    技术: tech
+#    生活: live
+   # 资源: resource
+
+
+# cover info config
+coverTitle: 
+coverDescription: XXX的博客
+sinaWb: 
+facebook: 
+qq: 
+github: 
+
+
+# Git-pages server info
+gitPageServerName: Github Pages
+gitPageServerUrl: https://github.com/
+codingPageServerName: Coding Pages
+codingPageServerUrl: https://pages.coding.me

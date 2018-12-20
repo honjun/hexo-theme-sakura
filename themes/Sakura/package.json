@@ -1,0 +1,28 @@
+{
+  "name": "hexo-theme-jsimple",
+  "version": "0.0.2",
+  "description": "Simple three column theme for Hexo.Inspired by JianShu.com",
+  "license": "MIT",
+  "dependencies": {
+    "hexo-renderer-ejs": "^0.2.0",
+    "hexo-renderer-marked": "^0.2.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangkunyin/hexo-theme-jsimple.git"
+  },
+  "keywords": [
+    "Simple",
+    "Three Column",
+    "Jian Shu",
+    "Hexo"
+  ],
+  "bugs": {
+    "url": "https://github.com/tangkunyin/hexo-theme-jsimple/issues"
+  },
+  "author": {
+    "name": "tangsir",
+    "url": "https://www.tangkunyin.com",
+    "email": "iam@tangkunyin.com"
+  }
+}

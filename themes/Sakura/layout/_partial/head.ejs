@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive_a');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+  <title itemprop="name"><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <% if (theme.favicon){ %>
+    <link rel="shortcut icon" href="<%- theme.favicon %>">
+  <% } %>
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//127.0.0.1">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all">
+  <style type="text/css">
+  .author-profile i , .post-like a , .post-share .show-share , .sub-text , .we-info a , span.sitename , .post-more i:hover , #pagination a:hover , .post-content a:hover , .float-content i:hover{ color: #FE9600 }
+  .feature i , /*.feature-title span ,*/ .download , .navigator i:hover , .links ul li:before , .ar-time i , span.ar-circle , .object , .comment .comment-reply-link , .siren-checkbox-radio:checked + .siren-checkbox-radioInput:after { background: #FE9600 }
+  ::-webkit-scrollbar-thumb { background: #FE9600 }
+  .download , .navigator i:hover , .link-title , .links ul li:hover , #pagination a:hover , .comment-respond input[type='submit']:hover { border-color: #FE9600 }
+  .entry-content a:hover , .site-info a:hover , .comment h4 a , #comments-navi a.prev , #comments-navi a.next , .comment h4 a:hover , .site-top ul li a:hover , .entry-title a:hover , #archives-temp h3 , span.page-numbers.current , .sorry li a:hover , .site-title a:hover , i.iconfont.js-toggle-search.iconsearch:hover , .comment-respond input[type='submit']:hover { color: #FE9600 }
+  .feature img{ border-radius: 0px; !important; }
+  .feature i { border-radius: 0px; !important; }
+  .centerbg{background-image: url("http://127.0.0.1/wordpress/wp-content/themes/Sakura/cover/");background-position: center center;background-attachment: inherit;}
+  .rotating {
+      -webkit-animation: rotating 6s linear infinite;
+      -moz-animation: rotating 6s linear infinite;
+      -ms-animation: rotating 6s linear infinite;
+      -o-animation: rotating 6s linear infinite;
+      animation: rotating 6s linear infinite;
+  }
+  </style>
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "";
+  mashiro_option.author_name = "";
+  mashiro_option.template_url = "http://127.0.0.1/wordpress/wp-content/themes/Sakura";
+  mashiro_option.site_url = "http://127.0.0.1/wordpress";
+  mashiro_option.cover_api = "http://127.0.0.1/wordpress/wp-content/themes/Sakura/cover/";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+    (function(url){if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){return;}
+    var addEvent =function(evt,handler) {if (window.addEventListener) {document.addEventListener(evt,handler,false);} else if (window.attachEvent) {document.attachEvent('on' + evt,handler);}
+    };var removeEvent =function(evt,handler) {if (window.removeEventListener) {document.removeEventListener(evt,handler,false);} else if (window.detachEvent) {document.detachEvent('on' + evt,handler);}
+    };var evts ='contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');var logHuman =function() {if (window.wfLogHumanRan) {return;}
+    window.wfLogHumanRan =true;var wfscr =document.createElement('script');wfscr.type ='text/javascript';wfscr.async =true;wfscr.src =url + '&r=' + Math.random();(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);for (var i =0;i < evts.length;i++) {removeEvent(evts[i],logHuman);}
+    };for (var i =0;i < evts.length;i++) {addEvent(evts[i],logHuman);}
+    })('//2heng.xin/?wordfence_lh=1&hid=82437A107469254DAB1A692F77F11505');
+  </script>
+  <script type="text/javascript">
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}.centerbg{background-image:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.2/cover/gallary/199-bigskin-3.jpg");background-position:center center;background-attachment:inherit;}
+  </style>
+  <script>
+    var mashiro_global =new Object();var mashiro_option =new function () {this.NProgressON =true;this.email_domain ="moezx.cc";this.email_name ="me";this.cookie_version_control ="---2018/9/17";this.qzone_autocomplete =false;this.site_name ="樱花庄的白猫";this.author_name ="Mashiro";this.template_url ="https://2heng.xin/wp-content/themes/Sakura";this.site_url ="https://2heng.xin";this.qq_api_url ="https://api.mashiro.top/qqinfo/";this.qq_avatar_api_url ="https://api.mashiro.top/qqinfo/";this.is_app =function(app_version){window.is_app =true;window.checked =false;window.app_version =app_version;window.latest_version =7;}
+    this.app_update =function(isAutoCheck){if(window.app_version < window.latest_version) {if(isAutoCheck) {if(!window.checked) {window.checked =true;if(window.app_version<=5) {if (window.confirm("检测到新版本，是否更新？")) {window.open("https://u.2heng.xin/app");}
+    } else {window.open("?mashiroHasUpdate");}
+    }
+    } else {if(window.app_version<=5) {setTimeout(function(){window.open("https://u.2heng.xin/app");},1000);} else {window.open("?mashiroHasUpdate");}
+    }
+    } else {if(window.app_version<=5) {isAutoCheck ?console.info("Auto Check：已经是最新版本") :addComment.createButterbar("已经是最新版本");} else {isAutoCheck ?console.info("Auto Check：已经是最新版本") :window.open("?mashiroNoUpdate");}
+    }
+    }
+    }
+    mashiro_option.jsdelivr_css_src ="https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.0/css/lib.min.css";mashiro_option.head_notice ="on";console.log =function() {};console.info("%c Mashiro %c","background:#24272A; color:#ffffff","","https://2heng.xin/");console.info("%c Github %c","background:#24272A; color:#ffffff","","https://github.com/mashirozx");console.info('为什么控制台一直在报错呢？QAQ');mashiro_global.landing_at_home =true;
+  </script>
+</head>

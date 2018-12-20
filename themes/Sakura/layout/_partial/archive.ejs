@@ -1,0 +1,10 @@
+<% if (pagination == 2){ %>
+  <!-- 首页默认取最最新文章集 -->
+  <% page.posts.sort('date', theme.homePageSortType).limit(theme.homeArticleShown).each(function(post, index){ %>
+    <%- partial('_widget/category-items', {index: index, post: post}) %>
+  <% }) %>
+<% } else { %>
+  <% page.posts.each(function(post, index){ %>
+    <%- partial('_widget/category-items', {index: index, post: post}) %>
+  <% }) %>
+<% } %>

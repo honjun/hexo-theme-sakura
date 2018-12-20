@@ -1,0 +1,233 @@
+.headerCont{
+	height: 60px;
+	line-height: 60px;
+}
+.container{
+
+}
+.myIndex{
+	padding-top: 90px;
+}
+.leftBoxs{
+	width: 15%;
+    float: left;
+    margin-top: 12px;
+ 	position: fixed;   
+}
+.leftBoxs h2{
+	font-size: 18px;
+    font-weight: bold;
+    text-indent: 10px;
+    padding-bottom: 20px;
+}
+.leftBoxs .list-click li{
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	text-indent: 5px;
+	margin-bottom: 18px;
+	cursor: pointer;
+	border-left: 3px transparent solid;
+}
+.leftBoxs .list-click li a{
+	font-size: 14px;
+	font-family: MicrosoftYaHeiUI;
+	color: #777;
+}
+.leftBoxs .list-click li a:hover{
+	color: deepskyblue;
+}
+.leftBoxs .list-click .actives{
+	border-left: 3px deepskyblue solid;
+}
+.rightBox{
+	width: 85%;
+	float: left;
+}
+.rightBox .row{
+	margin: 0;
+}
+.rightBox .title{
+	padding-bottom: 60px;
+}
+.rightBox .title h2{
+    width: 155px;
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px #999 solid;
+    font-family: MicrosoftYaHeiUI;
+        color: #333;
+}
+.rightBox .title h2 a:hover{
+	color: #000;
+}
+.rightBox .title P{
+    padding-top: 10px;
+    text-align: center;
+    color: #999;
+    font-size: 15px;
+    font-weight: bold;
+}
+.sjzs{
+	    width: 430px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.sjzs li{
+	text-align: center;
+}
+.sjzs li:nth-child(1){
+	width: 115px;
+}
+.sjzs li:nth-child(2){
+	width: 130px;
+}
+.sjzs li h3{
+	font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.sjzs li p{
+	text-align: center;
+	padding-bottom: 20px;
+	color: #888;
+}
+.textList{
+	padding-bottom: 80PX;
+}
+.textList li{
+	color: #444;
+}
+.textList li h4{
+	font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#w220{
+	width: 220px;
+}
+.w500{
+    width: 480px;
+    padding: 25px 0;
+}
+.sxList{
+	width: 700px;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+.sxList li{
+	padding: 25px 0;
+}
+.borBtm{
+	border-bottom: 2px #999 solid;
+}
+.sxList li img{
+	/*height: 49px;*/
+	display: block;
+	margin: 0 auto;
+}
+.sxList li p{
+	padding-top: 20px;
+    color: #9933FF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+.wd140{
+	width: 140px;
+}
+.wd125{
+	width: 125px;
+}
+.wd120{
+	width: 120px;
+}
+.downMain .imgs{
+    width: 200px;
+    height: 35px;
+    display: block;
+    margin: 0 auto 65px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    line-height: 35px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background-image: -webkit-linear-gradient(left, #6b39e4 0%, #3809ea 51%, #bc49e8 100%);
+    background-image: linear-gradient(to right, #5d1ae0 0%, #883adc 51%, #aa59e4 100%);
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+}
+.downMain .imgs:hover{
+    background-image: -webkit-linear-gradient(left, #21d397 0%, #7450fe 51%, #21d397 100%);
+    background-image: linear-gradient(to right, #bc49e8 0%, #7450fe 51%, #21d397 100%);
+    /*-webkit-transition: all 100ms;
+    transition: all 1000ms;*/
+}
+.gavin_design div{
+    width: 200px;
+    height: 35px;
+    margin: 0 auto 65px;
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    line-height: 35px;
+}
+.line{
+    position: relative;
+    background-image: -webkit-linear-gradient(left, #6b39e4 0%, #3809ea 51%, #bc49e8 100%);
+    background-image: linear-gradient(to right, #9933FF 0%, #6600FF 100%);
+}
+.line_gavinfix{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    opacity: 0;
+    background-image: -webkit-linear-gradient(left, #21d397 0%, #7450fe 51%, #21d397 100%);
+    background-image: linear-gradient(to right, #6600FF 0%, #9933FF 100%);
+    -webkit-transition: opacity .6s linear;
+}
+.line:hover .line_gavinfix{
+    opacity: 1;
+}
+.kong{
+	    width: 15%;
+    float: left;
+    margin-top: 12px;
+}
+@media screen and (max-width: 960px) {
+	.rightBox{
+		width: 100%;
+	}
+	.leftBoxs{
+		display: none;
+	}
+	
+	.sjzs{
+		width: 100%;
+	}
+	.sjzs img{
+		width: 100%;
+	}
+	.sxList{
+		width: 100%;
+	}
+	.w500{
+		width: 95%;
+		margin: 0 auto;
+	}
+	.sxList li div{
+		float: none;
+	}
+}

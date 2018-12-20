@@ -1,0 +1,18 @@
+<%- partial('_partial/head') %>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <%- partial('_partial/headertop', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <%- body %>
+    
+      <!-- <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+        <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+      <% } %> -->
+    
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  </section>
+</body>
+</html>
