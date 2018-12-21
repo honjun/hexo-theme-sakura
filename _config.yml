@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: hojun
 subtitle:
 description:
 keywords:
@@ -78,4 +78,9 @@ theme: Sakura
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: 
+    # github: git@github.com:honjun/honjun.github.io.git
+    # github: https://github.com/honjun/honjun.github.io.git
+    coding: https://git.coding.net/hojun/hojun.git
+  branch: master
