@@ -5,5 +5,5 @@ db.json
 node_modules/
 public/
 .deploy*/
-# source/
-# scaffolds/
+source/
+scaffolds/
