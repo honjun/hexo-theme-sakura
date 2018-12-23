@@ -31,13 +31,14 @@
 var HermitX ={"ajaxurl":"https://2heng.xin/wp-admin/admin-ajax.php","version":"2.8.0"};</script>
 <script type="text/javascript">
 /* <![CDATA[ */
-var Poi = {"pjax":"","movies":{"url":"https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.3","name":"The Pet Girl of Sakurasou","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"","movies":{"url":"https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.3","name":"The Pet Girl of Sakurasou","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"","movies":{"url":"https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.3","name":"The Pet Girl of Sakurasou","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
 /* ]]> */
 </script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/js/lib.min.js?ver=3.0.7"></script>
+<script type="text/javascript" src="/js/lib.min.js"></script>
 <script type="text/javascript" src="/js/sakura-app.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css" media="all">
-<link rel="stylesheet" href="https://at.alicdn.com/t/font_679578_qyt5qzzavdo39pb9.css" media="all">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="all">
-<!-- <script type="text/javascript" src="https://2heng.xin/wp-content/cache/autoptimize/js/autoptimize_67e24dd764fc49450e090002abca5761.js"></script> -->
+<script type="text/javascript" src="/js/InsightSearch.js"></script>

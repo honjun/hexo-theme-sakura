@@ -1,5 +1,5 @@
 <% var external_link = config.external_link ? '_blank' : '_self'; %>
-<article <% if (index%2 == 0){ %> class="post-list-thumb-left" <% } %> class="post post-list-thumb post-list-show" itemscope="" itemtype="http://schema.org/BlogPosting">
+<article <% if (index%2 == 0){ %> class="post post-list-thumb post-list-show post-list-thumb-left" <% } %> class="post post-list-thumb post-list-show" itemscope="" itemtype="http://schema.org/BlogPosting">
 
   <div class="post-thumb">
     <a href="<%- url_for(post.path) %>">
@@ -15,11 +15,10 @@
         <h3><%= post.title %></h3>
       </a>
       <div class="post-meta">
-        <span><i class="iconfont icon-attention"></i>11 热度</span>
-        <span class="comments-number">
-          <i class="iconfont icon-mark"></i>
-          <a href="<%- url_for(post.path) %>#respond">
-          NOTHING</a>
+        <span><i class="fa fa-tags"></i>
+        <% post.tags.each((tag)=>{ %>
+            <a href="<%- url_for(tag.path) %>"><%= tag.name %><em>·</em></a>
+          <% }) %>
         </span>
         <span>
           <i class="iconfont icon-file"></i>

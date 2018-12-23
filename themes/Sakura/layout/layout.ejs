@@ -12,7 +12,18 @@
         <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
       <% } %> -->
     
+    <%- partial('_widget/search/insight') %>
     <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
   </section>
+  <%- partial('_partial/mheader', null, {cache: !config.relative_link}) %>
+  <button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
 </body>
 </html>

@@ -1,3 +1,7 @@
+.post-meta em {
+    margin: 0 5px;
+    color: #666;
+}
 .aplayer {
     background:#fff;
     font-family:Arial,Helvetica,sans-serif;
@@ -4035,7 +4039,7 @@ li.feature-2 {
     content:"";
     position:absolute;
     top:112px;
-    left:30%;
+    left:50%;
     margin-left:-15px;
     border-width:15px;
     border-style:solid;
@@ -4711,7 +4715,7 @@ h1.entry-title {
     float:right;
     height:50px;
     line-height:43px;
-    margin-right:-6px
+    margin-right:6px
 }
 .site-title img {
     height:40px;
@@ -4786,7 +4790,8 @@ h3#comments-list-title,nav#comments-navi {
     position:relative
 }
 #mo-nav.open {
-    width:250px
+    width:250px;
+    transition:all .3s ease
 }
 .wrapper section {
     max-width:600px
