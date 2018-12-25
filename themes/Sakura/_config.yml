@@ -2,16 +2,32 @@
 siteName: kx-zyq
 shortName: KX
 
-menu:
-  首页: / || fa-fort-awesome || faa-horizontal
-  归档: /archives || fa-archive || faa-shake || archives
-  清单: /archives || fa-list-ul || faa-vertical
-  留言板: /archives || fa-pencil-square-o || faa-tada
-  友人帐: /links || fa-link || faa-shake
-  赞赏: /archives || fa-heart || faa-pulse
-  关于: /archives || fa-leaf || faa-wrench
-  客户端: /archives || fa-android || faa-vertical
-  RSS: /archives || fa fa-rss || faa-pulse
+menus:
+  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    极客: {path: /categories/技术/, fa: fa-terminal }, 
+    文章: {path: /categories/生活/, fa: fa-file-text-o }, 
+    影评: {path: /archives, fa: fa-quote-right }, 
+    随想: {path: /archives, fa: fa-commenting-o },
+    笔记: {path: /archives, fa: fa-book }
+  } }
+  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+    书单: {path: /archives, fa: fa-th-list faa-bounce }, 
+    番组: {path: /archives, fa: fa-film faa-vertical }, 
+    歌单: {path: /archives, fa: fa-headphones }
+  } }
+  留言板: { path: /, fa: fa-pencil-square-o faa-tada }
+  友人帐: { path: /links, fa: fa-link faa-shake }
+  赞赏: { path: /, fa: fa-heart faa-pulse }
+  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+    我？: {path: /archives, fa: fa-meetup}, 
+    统计: {path: /archives, fa: fa-area-chart }, 
+    监控: {path: /archives, fa: fa-heartbeat },
+    主题: {path: /archives, fa: iconfont icon-sakura },
+    索引: {path: /archives, fa: fa-map-signs }
+  } }
+  客户端: { path: /, fa: fa-android faa-vertical }
+  RSS: { path: /, fa: fa-rss faa-pulse }
 
 archives:
   技术: /tech || fa-terminal

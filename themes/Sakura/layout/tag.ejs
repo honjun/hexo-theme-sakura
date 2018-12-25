@@ -1,0 +1,27 @@
+<div class="pattern-center-blank"></div>
+<div class="pattern-center ">
+  <div class="pattern-attachment-img">
+    <img data-src="https://view.moezx.cc/images/2017/12/03/writing.jpg" class="lazyload" onerror="imgError(this,3)">
+  </div>
+  <header class="pattern-header ">
+    <h1 class="cat-title"><%= __(page.tag) %></h1>
+  </header>
+</div>
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <%- partial('_partial/category-archive', {pagination: 2, index: true}) %>
+      <div class="clearer">
+      </div>
+    </main>
+    <% if (page.total > 1){ %>
+      <nav class="navigator">
+        <% var prev_text = __('prev');var next_text = __('next');%>
+        <%- paginator({
+          prev_text: prev_text,
+          next_text: next_text
+        }) %>
+      </nav>
+    <% } %>
+  </div>
+</div>

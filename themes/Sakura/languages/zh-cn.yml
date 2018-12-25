@@ -30,6 +30,14 @@ connect: '联系我们'
 post_total_count: 嗯，目前共计%d篇文章
 read_more: '阅读全文'
 contents: 文章目录
+技术:
+    zh: 野生技术协会
+    en: Geek – Only for Love
+    img: https://view.moezx.cc/images/2017/12/03/o-CODING-facebook.jpg
+生活:
+    zh: 生活
+    en: live
+    img: https://view.moezx.cc/images/2017/12/03/writing.jpg
 none: 无
 insight:
     hint: '请输入关键词...'

@@ -29,14 +29,26 @@
         <div class="lower">
           <nav class="mobile-fit-control hide">
             <ul id="menu-new" class="menu">
-              <% for (var i in theme.menu){ %>
+              <% for (var menu in theme.menus){ %>
                 <li>
-                  <a href="<%- url_for(trim(theme.menu[i].split('||')[0])) %>">
+                  <a href="<%- url_for(theme.menus[menu].path) %>">
                     <span class="faa-parent animated-hover">
-                      <i class="fa <%= trim(theme.menu[i].split('||')[1]) %> <%= trim(theme.menu[i].split('||')[2]) %>" aria-hidden="true">
-                      </i><%= i %>
+                      <i class="fa  <%= theme.menus[menu].fa %>" aria-hidden="true"></i>
+                      <%= menu %>
                     </span>
                   </a>
+                  <% if (theme.menus[menu].submenus) { %>
+                    <ul class="sub-menu">
+                      <% for (var submenu in theme.menus[menu].submenus){ %>
+                        <li>
+                          <a href="<%- url_for(theme.menus[menu].submenus[submenu].path) %>">
+                            <i class="fa <%= theme.menus[menu].submenus[submenu].fa %>" aria-hidden="true"></i>
+                            <%= submenu %>
+                          </a>
+                        </li>
+                      <% } %>
+                    </ul>
+                  <% } %>
                 </li>
               <% } %>
             </ul>
