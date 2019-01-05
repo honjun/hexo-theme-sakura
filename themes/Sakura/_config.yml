@@ -12,22 +12,20 @@ menus:
     笔记: {path: /archives, fa: fa-book }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
-    书单: {path: /archives, fa: fa-th-list faa-bounce }, 
-    番组: {path: /archives, fa: fa-film faa-vertical }, 
-    歌单: {path: /archives, fa: fa-headphones }
+    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
+    番组: {path: /video, fa: fa-film faa-vertical }, 
+    歌单: {path: /music, fa: fa-headphones },
+    图集: {path: /tags/图集/, fa: fa-photo }
   } }
-  留言板: { path: /, fa: fa-pencil-square-o faa-tada }
+  留言板: { path: /comment, fa: fa-pencil-square-o faa-tada }
   友人帐: { path: /links, fa: fa-link faa-shake }
-  赞赏: { path: /, fa: fa-heart faa-pulse }
+  赞赏: { path: /donate, fa: fa-heart faa-pulse }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
-    我？: {path: /archives, fa: fa-meetup}, 
-    统计: {path: /archives, fa: fa-area-chart }, 
-    监控: {path: /archives, fa: fa-heartbeat },
-    主题: {path: /archives, fa: iconfont icon-sakura },
-    索引: {path: /archives, fa: fa-map-signs }
+    我？: {path: /about, fa: fa-meetup}, 
+    主题: {path: /theme-sakura, fa: iconfont icon-sakura },
   } }
-  客户端: { path: /, fa: fa-android faa-vertical }
-  RSS: { path: /, fa: fa-rss faa-pulse }
+  客户端: { path: /client, fa: fa-android faa-vertical }
+  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
 archives:
   技术: /tech || fa-terminal

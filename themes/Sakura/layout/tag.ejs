@@ -1,7 +1,12 @@
+<%
+  var img = page.tag + '.img';
+  //var zh = page.tag + '.zh';
+  //var en = page.tag + '.en';
+%>
 <div class="pattern-center-blank"></div>
 <div class="pattern-center ">
   <div class="pattern-attachment-img">
-    <img data-src="https://view.moezx.cc/images/2017/12/03/writing.jpg" class="lazyload" onerror="imgError(this,3)">
+    <img <% if(__(img)){%>data-src="<%= __(img)%>"<%} else {%>data-src="https://view.moezx.cc/images/2017/12/03/writing.jpg"<%} %> class="lazyload" onerror="imgError(this,3)">
   </div>
   <header class="pattern-header ">
     <h1 class="cat-title"><%= __(page.tag) %></h1>

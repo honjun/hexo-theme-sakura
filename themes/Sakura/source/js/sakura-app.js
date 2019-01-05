@@ -803,37 +803,6 @@ $(document).ready(function () {
     add_upload_tips();
 });
 
-function hide_live2d() {
-    if (getCookie("live2d") == "Hide") {
-        setTimeout(function () {
-            $(".prpr").css("visibility", "hidden");
-            if (document.body.clientWidth > 860) {
-                $(".hide-live2d").css("bottom", "66px");
-                $(".save-live2d, .switch-live2d").addClass("hide-live2d-tool");
-            }
-            $(".hide-live2d .keys").html("Show");
-            setCookie("live2d", "Show", 7);
-        }, 00);
-    } else {
-        setTimeout(function () {
-            $(".prpr").css("visibility", "visible");
-            if (document.body.clientWidth > 860) {
-                $(".hide-live2d").css("bottom", "156px");
-                $(".save-live2d, .switch-live2d").removeClass("hide-live2d-tool");
-            }
-            $(".hide-live2d .keys").html("Hide");
-            setCookie("live2d", "Hide", 7);
-        }, 00);
-    }
-}
-mashiro_global.ini.live2d = function () {
-    if (!getCookie("live2d")) setCookie("live2d", "Hide", 7);
-    if (getCookie("live2d") == "Show") {
-        setCookie("live2d", "Hide", 7);
-        hide_live2d();
-    }
-}
-mashiro_global.ini.live2d();
 var bgn = 1;
 
 function nextBG() {
@@ -2015,4 +1984,3 @@ function aplayerF() {
 if (document.body.clientWidth > 860) {
     aplayerF();
 }
-mashiro_global.ini.live2d;

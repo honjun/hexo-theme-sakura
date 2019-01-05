@@ -2,11 +2,11 @@
   <% if (post.photos && post.photos.length){ %>
     <div class="pattern-center ">
       <div class="pattern-attachment-img">
-        <img src="https://static.2heng.xin/wp-content/uploads//2017/11/1-1511301SP0.jpg" data-src="https://static.2heng.xin/wp-content/uploads//2017/11/1-1511301SP0.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+        <img data-src="<%= post.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
       </div>
       <header class="pattern-header ">
         <h1 class="entry-title">
-        友人帐</h1>
+        <%= post.keywords %></h1>
       </header>
     </div>
   <% } %>
@@ -14,6 +14,18 @@
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
       <%- post.content %>
       <!-- .entry-content -->
+      <% if (config.valine && post.comments) { %>
+      <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+      <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+      <div id="vcomments"></div>
+      <script>
+        new Valine({
+          el: '#vcomments',
+          appId: "<%=config.v_appId %>",
+          appKey: "<%=config.v_appKey %>"
+        })
+      </script>
+      <% } %>
       <footer class="post-footer">
         <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
         <div class="post-tags">
