@@ -14,46 +14,15 @@
           <li id="bg-pre">
             <img class="flipx" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg">
           </li>
-          <li>
-            <a href="http://github.com/mashirozx" target="_blank" class="social-github" title="github">
-              <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png">
-            </a>
-          </li>
-          <li>
-            <a href="http://weibo.com/mashirozx?is_all=1" target="_blank" class="social-sina" title="sina">
-              <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/sina.png">
-            </a>
-          </li>
-          <li>
-            <a href="https://t.me/SakurasoNoMashiro" target="_blank" class="social-lofter" title="telegram">
-              <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/telegram.svg">
-            </a>
-          </li>
-          <li>
-            <a href="https://music.163.com/m/user/home?id=2655217" target="_blank" class="social-wangyiyun" title="CloudMusic">
-              <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/wangyiyun.png">
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/2hengxin" target="_blank" class="social-wangyiyun" title="Twitter">
-              <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/twitter.png">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.zhihu.com/people/young-dolphin" target="_blank" class="social-wangyiyun" title="Zhihu">
-              <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/zhihu.png">
-            </a>
-          </li>
-          <li>
-            <a href="https://stackoverflow.com/users/8083009/mashiro?tab=profile" target="_blank" class="social-wangyiyun" title="StackOverflow">
-              <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.3/img/Sakura/images/sns/stackoverflow.svg">
-            </a>
-          </li>
-          <li>
-            <a onclick="mail_me()" class="social-wangyiyun" title="E-mail">
-              <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg">
-            </a>
-          </li>
+          <% if (theme.social) {%>
+            <% for (i in theme.social) {%>
+              <li>
+                <a href="<%= theme.social[i][0]%>" target="_blank" class="social-github" title="github">
+                  <img src="<%= theme.social[i][1]%>">
+                </a>
+              </li>
+            <% } %>
+          <% } %>
           <li id="bg-next">
             <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg">
           </li>
@@ -62,7 +31,7 @@
     </div>
   </figure>
   <div id="video-container" style="">
-    <video id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
     </video>
     <div id="video-btn" class="loadvideo videolive">
     </div>

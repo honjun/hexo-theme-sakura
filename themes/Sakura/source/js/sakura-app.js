@@ -803,18 +803,17 @@ $(document).ready(function () {
     add_upload_tips();
 });
 
-var bgn = 1;
-
 function nextBG() {
-    $(".centerbg").css("background-image", "url(/images/cover/" + Math.abs(bgn%3) + ".jpg)");
+    $(".centerbg").css("background-image", 'url("/images/cover/(' + Math.abs(bgn%8) + ').jpg.webp")');
     bgn = bgn + 1;
 }
 
 function preBG() {
     bgn = bgn - 1;
-    $(".centerbg").css("background-image", "url(/images/cover/" + Math.abs(bgn%3) + ".jpg)");
+    $(".centerbg").css("background-image", 'url("/images/cover/(' + Math.abs(bgn%8) + ').jpg.webp")');
 }
 $(document).ready(function () {
+    $(".centerbg").css("background-image", 'url("/images/cover/(' + bgn + ').jpg.webp")');
     $("#bg-next").click(function () {
         nextBG();
     });

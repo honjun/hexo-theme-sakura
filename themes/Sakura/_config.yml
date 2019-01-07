@@ -5,11 +5,11 @@ shortName: KX
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
-    极客: {path: /categories/技术/, fa: fa-terminal }, 
-    文章: {path: /categories/生活/, fa: fa-file-text-o }, 
-    影评: {path: /archives, fa: fa-quote-right }, 
-    随想: {path: /archives, fa: fa-commenting-o },
-    笔记: {path: /archives, fa: fa-book }
+    技术: {path: /categories/技术/, fa: fa-code }, 
+    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
+    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
+    随想: {path: /categories/随想/, fa: fa-commenting-o },
+    转载: {path: /categories/转载/, fa: fa-book }
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
@@ -23,13 +23,10 @@ menus:
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
     我？: {path: /about, fa: fa-meetup}, 
     主题: {path: /theme-sakura, fa: iconfont icon-sakura },
+    Lab: {path: /lab, fa: fa-cogs },
   } }
   客户端: { path: /client, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
-
-archives:
-  技术: /tech || fa-terminal
-  生活: /live || fa-file-text-o
 
 # full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
 fullHttps: false
@@ -42,29 +39,27 @@ avatar:
 homePageSortType: -1
 # Home page article shown number)
 homeArticleShown: 10
+# bg
+bgn: 8
 
 
 # your site build time or founded date
 siteBuildingTime: 07/17/2018
 
 
-# Top navigate menu name
-## Notice:
-## Name order decide show index.The name also called category alias,so you must set category alias before start server.
-## BTW,'category_map' and 'tag_map' field in site '_config.yml' file must one to one correspondence with menus below.
-# menu:
-#    技术: tech
-#    生活: live
-   # 资源: resource
-
-
 # cover info config
 coverTitle: 
 coverDescription: XXX的博客
-sinaWb: 
-facebook: 
-qq: 
-github: 
+
+#social
+social:
+  github: ['http://github.com/honjun','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png']
+  sina: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/sina.png']
+  wangyiyun: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/wangyiyun.png']
+  zhihu: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/zhihu.png']
+  email: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg']
+
+
 
 
 # Git-pages server info

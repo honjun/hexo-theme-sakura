@@ -1,3 +1,11 @@
+#veditor {
+    background-image: url(https://view.moezx.cc/images/2018/03/24/comment-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255,255,255,0);
+    resize: vertical;
+}
 .post-meta em {
     margin: 0 5px;
     color: #666;
@@ -3905,13 +3913,38 @@ li.feature-2 {
     background-size:cover;
     z-index:-1
 }
+@media(max-width:560px) {
+    #bgvideo {
+        min-height: 280px !important;
+    }
+}
 @media(max-width:860px) {
     #centerbg {
     height:300px;
     background-attachment:scroll
 }
-.focusinfo,#video-container {
-    display:none
+.focusinfo .header-tou img {
+    width: 100px !important;
+}
+.header-info {
+    width: 90% !important;
+}
+.header-info:before {
+    top: 98px !important;
+}
+.top-social_v2 li {
+    margin-right: 0px !important; 
+    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),auto !important;
+}
+}
+#bgvideo {
+    position: absolute;
+    top: 0px !important;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 0;
 }
 }.blank {
     padding-top:80px;
@@ -4601,152 +4634,154 @@ i.iconfont.down {
 }
 @media(max-width:630px) {
     .works-list {
-    width:100% !important;
-    margin:0 !important
+        width:100% !important;
+        margin:0 !important
+    }
 }
-}@media(max-width:630px) {
+@media(max-width:630px) {
     .links ul li {
     width:100% !important
-}
-.we-content li {
-    width:100%;
-    margin-top:0
-}
-.we-icon {
-    top:50px !important
-}
-.wtitle {
-    top:130px !important
-}
-.sub-text {
-    top:160px !important
-}
-.admin-login,.wesite-des {
-    display:none
-}
-.wesite-title {
-    float:none;
-    text-align:center;
-    border-right:0;
-    padding-right:0
-}
+    }
+    .we-content li {
+        width:100%;
+        margin-top:0
+    }
+    .we-icon {
+        top:50px !important
+    }
+    .wtitle {
+        top:130px !important
+    }
+    .sub-text {
+        top:160px !important
+    }
+    .admin-login,.wesite-des {
+        display:none
+    }
+    .wesite-title {
+        float:none;
+        text-align:center;
+        border-right:0;
+        padding-right:0
+    }
 }@media(max-width:860px) {
     .comments {
-    max-width:100% !important
+        max-width:100% !important
+    }
+    .top-feature,.top-feature-row {
+        display:none
+    }
+    .site-content {
+        padding:0 4%
+    }
+    .feature img {
+        width:52px;
+        height:52px
+    }
+    .post-list h1.entry-title {
+        margin:0 0 0 65px;
+        font-size:16px;
+        line-height:30px
+    }
+    .p-time {
+        position:relative;
+        margin:-15px 0 0 65px
+    }
+    .post-list p {
+        margin:20px 0 0 65px;
+        font-size:14px;
+        height:30px;
+        overflow:hidden
+    }
+    .s-content {
+        padding:10px 15px;
+        margin-right:65px
+    }
+    .s-content p {
+        margin-left:0;
+        margin-top:0;
+        height:30px;
+        overflow:hidden
+    }
+    .postava img {
+        width:52px;
+        height:52px
+    }
+    .overlay {
+        display:none
+    }
+    .info-meta {
+        display:none
+    }
+    .post-more {
+        display:none
+    }
+    h1.entry-title {
+        font-size:18px
+    }
+    .entry-content p {
+        font-size:14px
+    }
+    .post-footer,.post-share,.post-like {
+        display:none
+    }
+    .post-tags {
+        text-align:center;
+        float:none;
+        font-size:12px
+    }
+    .author-profile {
+        display:none
+    }
+    .site-footer {
+        padding:30px
+    }
+    .lower {
+        display:none !important
+    }
+    .m-nav {
+        display:block
+    }
+    .site-header {
+        display:none
+    }
+    .site-branding {
+        float:right;
+        height:50px;
+        line-height:43px;
+        margin-right: 6px
+    }
+    .site-title img {
+        height:40px;
+        line-height:40px;
+        margin:0;
+        vertical-align:middle
+    }
+    .site-title {
+        font-size:20px;
+        margin-right:10px
+    }
+    .links ul li {
+        width:48.6%
+    }
+    .links ul li:before {
+        display:none
+    }
+    .links ul li:hover .sitename {
+        color:orange
+    }
+    .links ul li:hover .linkdes {
+        color:#949494;
+        border-top:1px dashed #ddd
+    }
+    .author-box {
+        display:none
+    }
+    #archives-temp {
+        padding:0 20px
+    }
 }
-.top-feature,.top-feature-row {
-    display:none
-}
-.site-content {
-    padding:0 4%
-}
-.feature img {
-    width:52px;
-    height:52px
-}
-.post-list h1.entry-title {
-    margin:0 0 0 65px;
-    font-size:16px;
-    line-height:30px
-}
-.p-time {
-    position:relative;
-    margin:-15px 0 0 65px
-}
-.post-list p {
-    margin:20px 0 0 65px;
-    font-size:14px;
-    height:30px;
-    overflow:hidden
-}
-.s-content {
-    padding:10px 15px;
-    margin-right:65px
-}
-.s-content p {
-    margin-left:0;
-    margin-top:0;
-    height:30px;
-    overflow:hidden
-}
-.postava img {
-    width:52px;
-    height:52px
-}
-.overlay {
-    display:none
-}
-.info-meta {
-    display:none
-}
-.post-more {
-    display:none
-}
-h1.entry-title {
-    font-size:18px
-}
-.entry-content p {
-    font-size:14px
-}
-.post-footer,.post-share,.post-like {
-    display:none
-}
-.post-tags {
-    text-align:center;
-    float:none;
-    font-size:12px
-}
-.author-profile {
-    display:none
-}
-.site-footer {
-    padding:30px
-}
-.lower {
-    display:none !important
-}
-.m-nav {
-    display:block
-}
-.site-header {
-    display:none
-}
-.site-branding {
-    float:right;
-    height:50px;
-    line-height:43px;
-    margin-right:6px
-}
-.site-title img {
-    height:40px;
-    line-height:40px;
-    margin:0;
-    vertical-align:middle
-}
-.site-title {
-    font-size:20px;
-    margin-right:10px
-}
-.links ul li {
-    width:48.6%
-}
-.links ul li:before {
-    display:none
-}
-.links ul li:hover .sitename {
-    color:orange
-}
-.links ul li:hover .linkdes {
-    color:#949494;
-    border-top:1px dashed #ddd
-}
-.author-box {
-    display:none
-}
-#archives-temp {
-    padding:0 20px
-}
-}@media(max-width:1080px) {
+@media(max-width:1080px) {
     .info-meta {
     display:none
 }
@@ -4830,18 +4865,21 @@ h3#comments-list-title,nav#comments-navi {
     position:absolute;
     width:30px;
     height:3px;
-    background-color:#333;
+    background-color:#fff;
     top:24px;
     left:10px
 }
 .openNav .icon:before,.openNav .icon:after {
     transition-duration:.5s;
-    background-color:#333;
+    background-color:#fff;
     position:absolute;
     content:"";
     width:30px;
     height:3px;
     left:0
+}
+i.iconfont.js-toggle-search.iconsearch {
+    color:#fff;
 }
 .openNav .icon:before {
     top:-8px
