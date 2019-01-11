@@ -1466,6 +1466,7 @@ var home = location.href,
                         "height": "auto"
                     }).show();
                     if (Poi.movies.live == 'open') Siren.liveplay();
+                    $('.site-header').addClass('is-homepage');
                 } else {
                     $('.blank').css({
                         "padding-top": "75px"

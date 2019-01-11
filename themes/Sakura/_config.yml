@@ -1,6 +1,7 @@
 # site name
 siteName: kx-zyq
 shortName: KX
+notice: hexo-Sakura主题已经开源，目前正在开发中...
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
