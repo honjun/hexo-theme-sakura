@@ -1,12 +1,7 @@
 .DS_Store
-_config.yml
-db.json
-package.json
 Thumbs.db
 db.json
 *.log
 node_modules/
 public/
 .deploy*/
-source/
-scaffolds/
