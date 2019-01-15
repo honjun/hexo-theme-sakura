@@ -7656,7 +7656,7 @@ img[src*="#in-center"] {
     display:none
 }
 }#video-add {
-    display:none !important
+    /*display:none !important*/
 }
 .accordionMenu {
     color:#424242;
