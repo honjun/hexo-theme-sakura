@@ -3,47 +3,19 @@
   <i class="fa fa-anchor" aria-hidden="true">
   </i>
   START:DASH!!</h1>
+  <% for (dash in theme.startdash) { %>
   <div class="top-feature-v2">
     <div class="the-feature square from_left_and_right">
-      <a href="/theme-sakura/" target="_blank">
+      <a href="<%= theme.startdash[dash].url %>" target="_blank">
         <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.2/img/other/sakura.md.png">
+          <img src="<%= theme.startdash[dash].img %>">
         </div>
         <div class="info">
-          <h3>
-          Sakura</h3>
-          <p>
-          本站 hexo 主题</p>
+          <h3><%= theme.startdash[dash].title %></h3>
+          <p><%= theme.startdash[dash].desc %></p>
         </div>
       </a>
     </div>
   </div>
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="http://space.bilibili.com/271849279?" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.6/img/other/th%20(3).jpg">
-        </div>
-        <div class="info">
-          <h3>
-          Bilibili</h3>
-          <p>
-          博主的b站视频</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="https://shop206822225.taobao.com/" target="_blank">
-        <div class="img">
-          <img src="https://wx3.sinaimg.cn/mw690/006bYVyvly1fz32wrs8d2j30zk0m8wu5.jpg">
-        </div>
-        <div class="info">
-          <h3>hojun的万事屋</h3>
-          <p>技术服务</p>
-        </div>
-      </a>
-    </div>
-  </div>
+  <% } %>
 </div>

@@ -40,8 +40,15 @@ avatar:
 homePageSortType: -1
 # Home page article shown number)
 homeArticleShown: 10
-# bg
+# 背景图片
 bgn: 8
+
+# startdash
+startdash: 
+  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.2/img/other/sakura.md.png}
+  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.6/img/other/th%20(3).jpg}
+  - {url: https://shop206822225.taobao.com/, title: hojun的万事屋, desc: 技术服务, img: https://wx3.sinaimg.cn/mw690/006bYVyvly1fz32wrs8d2j30zk0m8wu5.jpg}
+
 
 
 # your site build time or founded date
