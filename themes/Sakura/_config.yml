@@ -70,6 +70,7 @@ social:
   wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/wangyiyun.png}
   zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/zhihu.png}
   email: {url: http://weibo.com/mashirozx?is_all=1, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg}
+  wechat: {url: /#, qrcode: https://wx1.sinaimg.cn/large/006bYVyvgy1ftan8chgw0j302s02s3yh.jpg, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/wechat.png}
 
 #social  url, img 移动端配置
 msocial:

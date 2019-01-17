@@ -39,12 +39,17 @@
         <% } %>
         <div class="entry-content">
           <%- post.content %>
-          <!-- <p><img class="alignnone size-medium wp-image-4" data-src="http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-300x300.jpg" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg" onerror="imgError(this)" alt="" width="300" height="300" srcset="http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-300x300.jpg 300w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-150x150.jpg 150w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-768x768.jpg 768w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-1024x1024.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px"></p>
-          <noscript><img class="alignnone size-medium wp-image-4" src="http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-300x300.jpg" alt="" width="300" height="300" srcset="http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-300x300.jpg 300w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-150x150.jpg 150w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-768x768.jpg 768w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-1024x1024.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></p></noscript>
-          <p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
-          <h2 style="opacity:0;max-height:0;margin:0">Comments</h2> -->
         </div>
         <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏<div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.3/img/other/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.3/img/other/WeChanQR.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <footer class="post-footer">
           <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
           <div class="post-tags">
@@ -74,7 +79,11 @@
       </div>
       <section class="post-squares nextprev">
         <% if (post.prev){ %>
-          <div class="post-nepre half previous">
+          <% if (post.next) { %>
+            <div class="post-nepre half previous">
+          <% } else { %>
+            <div class="post-nepre full previous">
+          <% } %>
             <a href="<%- url_for(post.prev.path) %>" rel="prev">
               <div class="background">
                 <img class="lazyload" data-src="<%- post.prev.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.prev.photos[0]%>">
@@ -90,7 +99,11 @@
           </div>
         <% } %>
         <% if (post.next){ %>
-          <div class="post-nepre half next">
+          <% if (post.prev) { %>
+            <div class="post-nepre half next">
+          <% } else { %>
+            <div class="post-nepre full next">
+          <% } %>
             <a href="<%- url_for(post.next.path) %>" rel="next">
               <div class="background">
                 <img class="lazyload" data-src="<%- post.next.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.next.photos[0]%>">
@@ -106,6 +119,19 @@
           </div>
         <% } %>
       </section>
+      <% if (config.valine && post.comments) { %>
+        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+        <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+        <div id="vcomments"></div>
+        <script>
+          new Valine({
+            el: '#vcomments',
+            appId: "<%=config.v_appId %>",
+            appKey: "<%=config.v_appKey %>",
+            placeholder: "你是我一生只会遇见一次的惊喜 ..."
+          })
+        </script>
+      <% } %>
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
           <a href="http://127.0.0.1/wordpress/?author=1" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image" alt="hojun" height="70" width="70"></a>

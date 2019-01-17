@@ -16,11 +16,22 @@
           </li>
           <% if (theme.social) {%>
             <% for (i in theme.social) {%>
-              <li>
-                <a href="<%= theme.social[i].url%>" target="_blank" class="social-github" title="github">
-                  <img src="<%= theme.social[i].img%>">
-                </a>
-              </li>
+              <% if (i == 'wechat') {%>
+                <li class="wechat">
+                  <a href="<%= theme.social[i].url%>">
+                    <img src="<%= theme.social[i].img%>">
+                  </a>
+                  <div class="wechatInner">
+                    <img src="<%= theme.social[i].qrcode%>">
+                  </div>
+                </li>
+              <% } else { %>
+                <li>
+                  <a href="<%= theme.social[i].url%>" target="_blank" class="social-github" title="github">
+                    <img src="<%= theme.social[i].img%>">
+                  </a>
+                </li>
+              <% } %>
             <% } %>
           <% } %>
           <li id="bg-next">

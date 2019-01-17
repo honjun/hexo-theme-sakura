@@ -15,17 +15,17 @@
       <%- post.content %>
       <!-- .entry-content -->
       <% if (config.valine && post.comments) { %>
-      <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-      <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-      <div id="vcomments"></div>
-      <script>
-        new Valine({
-          el: '#vcomments',
-          appId: "<%=config.v_appId %>",
-          appKey: "<%=config.v_appKey %>",
-          placeholder: "你是我一生只会遇见一次的惊喜 ..."
-        })
-      </script>
+        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+        <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+        <div id="vcomments"></div>
+        <script>
+          new Valine({
+            el: '#vcomments',
+            appId: "<%=config.v_appId %>",
+            appKey: "<%=config.v_appKey %>",
+            placeholder: "你是我一生只会遇见一次的惊喜 ..."
+          })
+        </script>
       <% } %>
       <footer class="post-footer">
         <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
