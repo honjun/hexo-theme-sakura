@@ -1,6 +1,12 @@
 # site name
-siteName: kx-zyq
-shortName: KX
+siteName: さくら荘その
+shortName: hojun
+# favicon and site master avatar
+favicon: /images/favicon.ico
+avatar: https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
+url: https://sakura.hojun.cn
+description: 好少年光芒万丈
+
 notice: hexo-Sakura主题已经开源，目前正在开发中...
 
 menus:
@@ -32,9 +38,7 @@ menus:
 # full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
 fullHttps: false
 
-# favicon and site master avatar
-favicon: 
-avatar: 
+
 
 # Home page sort type: -1: newer first，1: older first.
 homePageSortType: -1
@@ -43,11 +47,11 @@ homeArticleShown: 10
 # 背景图片
 bgn: 8
 
-# startdash
+# startdash url, title, desc img
 startdash: 
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.2/img/other/sakura.md.png}
   - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.6/img/other/th%20(3).jpg}
-  - {url: https://shop206822225.taobao.com/, title: hojun的万事屋, desc: 技术服务, img: https://wx3.sinaimg.cn/mw690/006bYVyvly1fz32wrs8d2j30zk0m8wu5.jpg}
+  - {url: /, title: hojun的万事屋, desc: 技术服务, img: https://wx3.sinaimg.cn/mw690/006bYVyvly1fz32wrs8d2j30zk0m8wu5.jpg}
 
 
 
@@ -59,13 +63,19 @@ siteBuildingTime: 07/17/2018
 coverTitle: 
 coverDescription: XXX的博客
 
-#social
+#social  url, img PC端配置
 social:
-  github: ['http://github.com/honjun','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png']
-  sina: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/sina.png']
-  wangyiyun: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/wangyiyun.png']
-  zhihu: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/zhihu.png']
-  email: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg']
+  github: {url: http://github.com/honjun, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png}
+  sina: {url: http://weibo.com/mashirozx?is_all=1, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/sina.png}
+  wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/wangyiyun.png}
+  zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/zhihu.png}
+  email: {url: http://weibo.com/mashirozx?is_all=1, img: https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg}
+
+#social  url, img 移动端配置
+msocial:
+  github: {url: http://github.com/honjun, fa: fa-github, color: 333}
+  weibo: {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
+  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
 
 
 

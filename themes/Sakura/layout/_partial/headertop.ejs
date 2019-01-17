@@ -4,8 +4,8 @@
   <figure id="centerbg" class="centerbg">
     <div class="focusinfo no-select">
       <div class="header-tou">
-        <a href="https://sakura.2heng.xin">
-          <img src="https://wx1.sinaimg.cn/small/006bYVyvgy1ftand2qurdj303c03cdfv.jpg">
+        <a href="<%- theme.url%>">
+          <img src="<%- theme.avatar%>">
         </a>
       </div>
       <div class="header-info">
@@ -17,8 +17,8 @@
           <% if (theme.social) {%>
             <% for (i in theme.social) {%>
               <li>
-                <a href="<%= theme.social[i][0]%>" target="_blank" class="social-github" title="github">
-                  <img src="<%= theme.social[i][1]%>">
+                <a href="<%= theme.social[i].url%>" target="_blank" class="social-github" title="github">
+                  <img src="<%= theme.social[i].img%>">
                 </a>
               </li>
             <% } %>

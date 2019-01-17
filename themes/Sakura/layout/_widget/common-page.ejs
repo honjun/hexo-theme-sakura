@@ -90,16 +90,16 @@
       </section>
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="http://127.0.0.1/wordpress/?author=1" class="profile gravatar"><img src="http://gravatar.shino.cc/avatar/a2897ea8e93cf772b0fb482ac8951cc2?s=96&amp;d=mm&amp;r=g" itemprop="image" alt="hojun" height="70" width="70"></a>
+          <a href="http://127.0.0.1/wordpress/?author=1" class="profile gravatar"><img src="<%- theme.avatar%>" itemprop="image" alt="hojun" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="http://127.0.0.1/wordpress/?author=1" itemprop="url" rel="author">hojun</a>
+            <a href="<%- theme.url%>" itemprop="url" rel="author">hojun</a>
             </h3>
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i>一沙一世界，一花一天堂。君掌盛无边，刹那成永恒。</p>
+        <p><i class="iconfont icon-write"></i><%- theme.description%></p>
       </section>
     </main><!-- #main -->
   </div><!-- #primary -->

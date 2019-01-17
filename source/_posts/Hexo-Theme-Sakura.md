@@ -1,13 +1,19 @@
 ---
 title: Hexo-Theme-Sakura
+author: hojun
+avatar: https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
+authorLink: hojun.cn
+authorAbout: 一个好奇的人
+authorDesc: 一个好奇的人
 categories: 技术
 date: 2018-12-12 22:16:01
+comments: true
 tags: 
  - web
  - 悦读
 keywords: Web端720全景
 description: 最近又一次接触到了web端全景，是在720yun上，发现有好多用户上传的全景照片。再也按捺不住那颗好奇的心，去探究了下720云是怎么实现web端全景展示的。
-photos: 'https://ws3.sinaimg.cn/small/006bYVyvly1fxxewq3plij30yn0jjkjl.jpg'
+photos: https://wx2.sinaimg.cn/large/006bYVyvgy1fqmv0mlsktj31400u0avk.jpg
 ---
 ![](https://ws3.sinaimg.cn/large/006bYVyvly1fxxewq3plij30yn0jjkjl.jpg)
 最近又一次接触到了web端全景，是在720yun上，发现有好多用户上传的全景照片。再也按捺不住那颗好奇的心，去探究了下720云是怎么实现web端全景展示的。
