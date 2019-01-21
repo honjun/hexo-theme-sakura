@@ -509,7 +509,7 @@ function code_highlight_style() {
             'autocapitalize': 'off',
             'spellcheck': 'false',
             'contenteditable': 'false',
-            'design': 'by Mashiro'
+            'design': 'by hojun'
         }
         var ele_name = $('pre:eq(' + i + ')')[0].children[0].className;
         var lang = ele_name.substr(0, ele_name.indexOf(" ")).replace('language-', '');
@@ -526,20 +526,18 @@ function code_highlight_style() {
     $('pre code').each(function (i, block) {
         hljs.highlightBlock(block);
     });
-    for (var i = 0; i < $('pre').length; i++) {
+    for (var i = 0; i < $('article pre').length; i++) {
         gen_top_bar(i);
     }
-    hljs.initLineNumbersOnLoad();
     $('pre').on('click', function (e) {
-        if (e.target !== this) return;
         $(this).toggleClass('code-block-fullscreen');
         $('html').toggleClass('code-block-fullscreen-html-scroll');
     });
+    hljs.initLineNumbersOnLoad();
 }
 try {
     code_highlight_style();
 } catch (e) {}
-
 function attach_image() {
     $('#upload-img-file').change(function () {
         if (this.files.length > 10) {

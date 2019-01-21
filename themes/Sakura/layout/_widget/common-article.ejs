@@ -2,7 +2,7 @@
   <% if (post.photos && post.photos.length){ %>
     <div class="pattern-center single-center">
       <!-- 有配图默认渲染第一张 -->
-      <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" data-src="<%= post.photos[0] %>">
+      <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
       </div>
       <header class="pattern-header single-header">
         <h1 class="entry-title">
@@ -86,7 +86,7 @@
           <% } %>
             <a href="<%- url_for(post.prev.path) %>" rel="prev">
               <div class="background">
-                <img class="lazyload" data-src="<%- post.prev.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.prev.photos[0]%>">
+                <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.prev.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.prev.photos[0]%>">
               </div>
               <span class="label">
               Previous Post</span>
@@ -106,7 +106,7 @@
           <% } %>
             <a href="<%- url_for(post.next.path) %>" rel="next">
               <div class="background">
-                <img class="lazyload" data-src="<%- post.next.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.next.photos[0]%>">
+                <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.next.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.next.photos[0]%>">
               </div>
               <span class="label">
               Next Post</span>

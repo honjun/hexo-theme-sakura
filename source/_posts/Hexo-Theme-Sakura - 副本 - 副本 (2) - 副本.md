@@ -13,11 +13,51 @@ tags:
  - 悦读
 keywords: Web端720全景
 description: 最近又一次接触到了web端全景，是在720yun上，发现有好多用户上传的全景照片。再也按捺不住那颗好奇的心，去探究了下720云是怎么实现web端全景展示的。
-photos: https://wx2.sinaimg.cn/large/006bYVyvgy1fqmv0mlsktj31400u0avk.jpg
+photos: https://trhx.top/images/trhx.png
 ---
 ![](https://ws3.sinaimg.cn/large/006bYVyvly1fxxewq3plij30yn0jjkjl.jpg)
 最近又一次接触到了web端全景，是在720yun上，发现有好多用户上传的全景照片。再也按捺不住那颗好奇的心，去探究了下720云是怎么实现web端全景展示的。
-
+```html
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    
+  </body>
+</html>
+```
+```python
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import sklearn
+ 
+# Load the data
+oecd_bli = pd.read_csv("oecd_bli_2015.csv", thousands=',')
+gdp_per_capita = pd.read_csv("gdp_per_capita.csv",thousands=',',delimiter='\t',
+                            encoding='latin1', na_values="n/a")
+ 
+# Prepare the data
+country_stats = prepare_country_stats(oecd_bli, gdp_per_capita)
+X = np.c_[country_stats["GDP per capita"]]
+y = np.c_[country_stats["Life satisfaction"]]
+ 
+# Visualize the data
+country_stats.plot(kind='scatter', x="GDP per capita", y='Life satisfaction')
+plt.show()
+ 
+# Select a linear model
+lin_reg_model = sklearn.linear_model.LinearRegression()
+ 
+# Train the model
+lin_reg_model.fit(X, y)
+ 
+# Make a prediction for Cyprus
+X_new = [[22587]]  # Cyprus' GDP per capita
+print(lin_reg_model.predict(X_new)) 
+```
 ## 分析加载的资源
 ![](https://ws3.sinaimg.cn/large/006bYVyvly1fxxfmcxo7qj30y50idquk.jpg)
 我们使用f12开发者工具，查看分析找到了krp-player这个关键的js文件，并在js文件首部找到了它的原名"krpano"（稍微提一下：可能你还听说有其他插件或方式实现web全景:比如three.js，但那些都不是很成熟，存在大大小小的bug，而krpano比较成熟也是大部分全景网站所使用的，所以是收费的。）。于是搜索到了它的官网，并进行下载它的安装包（下载速度太慢可以搜索其百度网盘资源去下载）

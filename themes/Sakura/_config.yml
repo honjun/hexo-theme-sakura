@@ -8,6 +8,7 @@ url: https://sakura.hojun.cn
 description: 好少年光芒万丈
 
 notice: hexo-Sakura主题已经开源，目前正在开发中...
+lazyloadImg: https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.1/img/svg/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
