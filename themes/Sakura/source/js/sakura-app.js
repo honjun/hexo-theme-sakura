@@ -958,9 +958,9 @@ var pjaxInit = function () {
     if ($("div").hasClass("aplayer")) {
         reloadHermit();
     }
-    if ($("div").hasClass("popcontainer")) {
-        loadBotui();
-    }
+    // if ($("div").hasClass("popcontainer")) {
+    //     loadBotui();
+    // }
     try {
         reload_show_date_time();
     } catch (e) {}
@@ -1095,12 +1095,12 @@ function grin(tag, type, before, after) {
         myField.focus();
     }
 }
-if ($("div").hasClass("popcontainer")) {
-    loadBotui();
-}
-$("bot-ui").click(function () {
-    loadBotui();
-});
+// if ($("div").hasClass("popcontainer")) {
+//     loadBotui();
+// }
+// $("bot-ui").click(function () {
+//     loadBotui();
+// });
 
 function add_copyright() {
     document.body.addEventListener("copy", function (e) {
@@ -1274,18 +1274,18 @@ function get_poem(poem_ele, info_ele) {
     xhr.send();
 }
 
-function loadBotui() {
-    if ($('div').hasClass('popcontainer')) {
-        if (mashiro_global.variables.has_bot_ui) {
-            bot_ui_ini();
-        } else {
-            $.getScript('https://cdn.jsdelivr.net/gh/moezx/cdn@latest/js/botui/botui.js', function () {
-                bot_ui_ini();
-                mashiro_global.variables.has_bot_ui = true;
-            });
-        }
-    }
-}
+// function loadBotui() {
+//     if ($('div').hasClass('popcontainer')) {
+//         if (mashiro_global.variables.has_bot_ui) {
+//             bot_ui_ini();
+//         } else {
+//             $.getScript('https://cdn.jsdelivr.net/gh/moezx/cdn@latest/js/botui/botui.js', function () {
+//                 bot_ui_ini();
+//                 mashiro_global.variables.has_bot_ui = true;
+//             });
+//         }
+//     }
+// }
 
 function mail_me() {
     var mail = "mailto:" + mashiro_option.email_name + "@" + mashiro_option.email_domain;

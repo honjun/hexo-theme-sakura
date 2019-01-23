@@ -322,7 +322,6 @@ photos: https://static.2heng.xin/wp-content/uploads//2017/08/%E5%8D%88%E5%BE%8C_
 });
 </script>
 <div id="root">
-
   <div class="root">
     <a href="https://github.com/Kaiyuan/donate-page" target="_blank" class="pos-f tr3" title="Github"><span id="github"></span></a>
     <ul id="donateBox" class="list pos-f tr3">
