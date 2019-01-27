@@ -4,7 +4,7 @@ date: 2018-12-19 23:11:06
 keywords: 友人帐
 description: 
 comments: true
-photos: 'https://static.2heng.xin/wp-content/uploads//2017/11/1-1511301SP0.jpg'
+photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/links.jpg
 ---
 欢迎交换友链 ꉂ(ˊᗜˋ)
 

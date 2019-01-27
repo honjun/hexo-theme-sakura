@@ -4,7 +4,7 @@ date: 2018-12-20 23:13:48
 keywords: 留言板
 description: 
 comments: true
-photos: 'https://static.2heng.xin/wp-content/uploads//2017/08/pixiv54839592.png'
+photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
 ---
 {% raw %}
 <div class="toc-container">

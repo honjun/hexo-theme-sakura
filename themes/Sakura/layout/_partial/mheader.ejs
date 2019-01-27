@@ -1,6 +1,6 @@
 <div id="mo-nav" class="">
   <div class="m-avatar">
-    <img src="<%- theme.avatar%>">
+    <img src="<%- (theme.cdn || '') + theme.avatar%>">
   </div>
   <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px"><%- theme.siteName%><%- theme.shortName%></p>
   <p style="text-align: center; word-spacing: 20px;">
@@ -34,6 +34,5 @@
       </li>
     <% } %>
   </ul>
-  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">
-  © 2018 樱花庄的白猫</p>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">© 2019 hexo-sakura</p>
 </div>

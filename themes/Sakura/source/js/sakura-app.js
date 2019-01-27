@@ -425,23 +425,20 @@ function imgError(ele, type) {
     switch (type) {
     case 1:
         if (ele.src.includes("https://cn.gravatar.com/avatar")) {
-            ele.src = ele.src.replace("https://cn.gravatar.com/avatar/", "https://cdn.v2ex.com/gravatar/");
+            ele.src = ele.src.replace("https://cn.gravatar.com/avatar/", "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/gravatar.jpg");
         } else {
-            ele.src = 'https://view.moezx.cc/images/2017/12/30/Transparent_Akkarin.th.jpg';
+            ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/default_avatar.jpg';
         }
         break;
     case 2:
-        ele.src = 'https://gravatar.shino.cc/avatar/?s=80&d=mm&r=g';
+        ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/default_gavatar.jpg';
         break;
     case 3:
-        if (ele.src.includes("https://static.2heng.xin/")) {
-            ele.src = ele.src.replace("https://static.2heng.xin/wp-content/uploads/", "https://cdn.2heng.xin/");
-        } else {
-            ele.src = 'https://view.moezx.cc/images/2018/05/13/image-404.png';
-        }
+        
+        ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/image-404.png';
         break;
     default:
-        ele.src = 'https://view.moezx.cc/images/2018/05/13/image-404.png';
+        ele.src = 'https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/image-404.png';
     }
 }
 mashiro_global.post_list_show_animation = new function () {
@@ -677,7 +674,7 @@ function checkBgImgCookie() {
         $('#banner_wave_2').addClass('banner_wave_hide_fit_skin');
     }
     if (bgurl != "") {
-        if (bgurl == "https://view.moezx.cc/images/2018/01/03/sakura.png" || bgurl == "https://view.moezx.cc/images/2018/01/03/plaid2dbf8.jpg" || bgurl == "https://view.moezx.cc/images/2018/01/10/star02.png" || bgurl == "https://view.moezx.cc/images/2018/01/24/kyotoanimation.png" || bgurl == "https://view.moezx.cc/images/2018/09/17/little-monster.png") {
+        if (bgurl == "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/sakura.png" || bgurl == "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/plaid.jpg" || bgurl == "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/star.png" || bgurl == "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/point.png" || bgurl == "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/little-monster.png") {
             mashiro_global.variables.skinSecter = true;
             mashiro_global.variables.isNight = false;
             $("#night-mode-cover").css("visibility", "hidden");
@@ -744,11 +741,11 @@ $(document).ready(function () {
             setCookie("bgImgSetting", url, 30);
         });
     }
-    changeBG("#sakura-bg", "https://view.moezx.cc/images/2018/01/03/sakura.png");
-    changeBG("#gribs-bg", "https://view.moezx.cc/images/2018/01/03/plaid2dbf8.jpg");
-    changeBG("#pixiv-bg", "https://view.moezx.cc/images/2018/01/10/star02.png");
-    changeBG("#KAdots-bg", "https://view.moezx.cc/images/2018/01/24/kyotoanimation.png");
-    changeBG("#totem-bg", "https://view.moezx.cc/images/2018/09/17/little-monster.png");
+    changeBG("#sakura-bg", "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/sakura.png");
+    changeBG("#gribs-bg", "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/plaid.jpg");
+    changeBG("#pixiv-bg", "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/star.png");
+    changeBG("#KAdots-bg", "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/point.png");
+    changeBG("#totem-bg", "https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/themebg/little-monster.png");
     changeBGnoTrans("#bing-bg", "https://api.shino.cc/bing/");
     $(".skin-menu #white-bg").click(function () {
         mashiro_global.variables.skinSecter = false;
@@ -766,7 +763,7 @@ $(document).ready(function () {
     $(".skin-menu #dark-bg").click(function () {
         mashiro_global.variables.skinSecter = true;
         mashiro_global.variables.isNight = true;
-        $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.2/other-sites/api-index/images/me.png)");
+        $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/starry_sky.png)");
         $(".blank").css("background-color", "rgba(255,255,255,.8)");
         $("#night-mode-cover").css("visibility", "visible");
         $(".pattern-center").removeClass('pattern-center').addClass('pattern-center-sakura');
@@ -802,16 +799,16 @@ $(document).ready(function () {
 });
 
 function nextBG() {
-    $(".centerbg").css("background-image", 'url("/images/cover/(' + Math.abs(bgn%8) + ').jpg.webp")');
+    $(".centerbg").css("background-image", 'url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cover/(' + Math.abs(bgn%8) + ').jpg.webp")');
     bgn = bgn + 1;
 }
 
 function preBG() {
     bgn = bgn - 1;
-    $(".centerbg").css("background-image", 'url("/images/cover/(' + Math.abs(bgn%8) + ').jpg.webp")');
+    $(".centerbg").css("background-image", 'url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cover/(' + Math.abs(bgn%8) + ').jpg.webp")');
 }
 $(document).ready(function () {
-    $(".centerbg").css("background-image", 'url("/images/cover/(' + bgn + ').jpg.webp")');
+    $(".centerbg").css("background-image", 'url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cover/(' + bgn + ').jpg.webp")');
     $("#bg-next").click(function () {
         nextBG();
     });
@@ -1305,28 +1302,28 @@ function hearthstone_deck_iframe() {
 }
 var currentFontIsUbuntu = true;
 
-function changeFont() {
-    if (currentFontIsUbuntu) {
-        loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
-        currentFontIsUbuntu = false;
-    } else {
-        loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/or.css");
-        currentFontIsUbuntu = true;
-    }
-}
+// function changeFont() {
+//     if (currentFontIsUbuntu) {
+//         loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
+//         currentFontIsUbuntu = false;
+//     } else {
+//         loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/or.css");
+//         currentFontIsUbuntu = true;
+//     }
+// }
 
-function convertChinese(zh) {
-    if (zh == 'cn') {
-        $("#zh_cn").css("display", "none");
-        $("#zh_tw").css("display", "inline-block");
-        loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/tw.css");
-    }
-    if (zh == 'tw') {
-        $("#zh_tw").css("display", "none");
-        $("#zh_cn").css("display", "inline-block");
-        loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
-    }
-}
+// function convertChinese(zh) {
+//     if (zh == 'cn') {
+//         $("#zh_cn").css("display", "none");
+//         $("#zh_tw").css("display", "inline-block");
+//         loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/tw.css");
+//     }
+//     if (zh == 'tw') {
+//         $("#zh_tw").css("display", "none");
+//         $("#zh_cn").css("display", "inline-block");
+//         loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.8/css/cn.css");
+//     }
+// }
 mashiro_global.ini.normalize();
 if (window.location.hostname == "lovelive.2heng.xin") {
     Poi.ajaxurl = Poi.ajaxurl.replace('//2heng.xin', '');
@@ -1820,8 +1817,9 @@ $(function () {
     $(document).on("click", ".specsZan", function () {
         $(this).postLike();
     });
-    // console.log("%c Mashiro %c", "background:#24272A; color:#ffffff", "", "https://2heng.xin/");
-    // console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/mashirozx");
+    console.log("%c Mashiro %c", "background:#24272A; color:#ffffff", "", "https://2heng.xin/");
+    console.log("%c hojun %c", "background:#24272A; color:#ffffff", "", "https://www.hojun.cn/");
+    console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/honjun/hexo-theme-sakura");
 });
 var isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
     isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,
@@ -1842,7 +1840,7 @@ if ((isWebkit || isOpera || isIe) && document.getElementById && window.addEventL
         }
     }, false);
 }
-loadCSS(mashiro_option.jsdelivr_css_src);
+// loadCSS(mashiro_option.jsdelivr_css_src);
 // loadCSS("https://at.alicdn.com/t/font_679578_dishi1yoavm.css");
 // loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.4/fonts/Moe-Mashiro/stylesheet.css");
 // loadCSS("https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700");

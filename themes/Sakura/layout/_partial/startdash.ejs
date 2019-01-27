@@ -8,7 +8,7 @@
     <div class="the-feature square from_left_and_right">
       <a href="<%= theme.startdash[dash].url %>" target="_blank">
         <div class="img">
-          <img src="<%= theme.startdash[dash].img %>">
+          <img src="<%- (theme.cdn || '') + theme.startdash[dash].img %>">
         </div>
         <div class="info">
           <h3><%= theme.startdash[dash].title %></h3>

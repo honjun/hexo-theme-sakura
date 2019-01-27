@@ -1,3 +1,4 @@
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
   <div class="pattern-center-blank"></div>
   <% if (post.photos && post.photos.length){ %>
     <div class="pattern-center single-center">
@@ -9,12 +10,12 @@
         <%- post.title %></h1>
         <p class="entry-census">
           <span>
-            <a href="http://127.0.0.1/wordpress/?author=1">
+            <a href="<%- post.authorLink%>">
               <img src="<%- post.avatar%>">
             </a>
           </span>
           <span>
-            <a href="http://127.0.0.1/wordpress/?author=1">
+            <a href="<%- post.authorLink%>">
             hojun</a>
           </span>
           <span class="bull">
@@ -44,12 +45,13 @@
         <div class="single-reward">
           <div class="reward-open">赏<div class="reward-main">
               <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.3/img/other/AliPayQR.jpg"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.3/img/other/WeChanQR.png"></li>
+                <li class="alipay-code"><img src="<%- (theme.cdn || '') + theme.donate.alipay%>"></li>
+                <li class="wechat-code"><img src="<%- (theme.cdn || '') + theme.donate.wechat%>"></li>
               </ul>
             </div>
           </div>
         </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
         <footer class="post-footer">
           <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
           <div class="post-tags">
@@ -61,14 +63,8 @@
               0</span>
             </a>
           </div>
-          
           <div class="post-share">
-            <ul class="sharehidden">
-              <li><a href="http://www.jiathis.com/send/?webid=weixin&amp;url=http://127.0.0.1/wordpress/?p=1&amp;title=世界，您好！" onclick="window.open(this.href, 'renren-share', 'width=490,height=700');return false;" class="s-weixin"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.1/img/Sakura/images/sns/wechat.png"></a></li>
-              <li><a href="http://www.jiathis.com/send/?webid=qzone&amp;url=http://127.0.0.1/wordpress/?p=1&amp;title=世界，您好！" onclick="window.open(this.href, 'weibo-share', 'width=730,height=500');return false;" class="s-qq"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.1/img/Sakura/images/sns/qzone.png"></a></li>
-              <li><a href="http://www.jiathis.com/send/?webid=tsina&amp;url=http://127.0.0.1/wordpress/?p=1&amp;title=世界，您好！" onclick="window.open(this.href, 'weibo-share', 'width=550,height=235');return false;" class="s-sina"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.1/img/Sakura/images/sns/sina.png"></a></li>
-              <li><a href="http://www.jiathis.com/send/?webid=douban&amp;url=http://127.0.0.1/wordpress/?p=1&amp;title=世界，您好！" onclick="window.open(this.href, 'renren-share', 'width=490,height=600');return false;" class="s-douban"><img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.1/img/Sakura/images/sns/douban.png"></a></li>
-            </ul>
+            <div class="social-share sharehidden share-component"></div>
             <i class="iconfont show-share icon-forward"></i>
           </div>
         </footer><!-- .entry-footer -->
@@ -134,7 +130,7 @@
       <% } %>
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="http://127.0.0.1/wordpress/?author=1" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image" alt="hojun" height="70" width="70"></a>
+          <a href="<%- post.authorLink %>" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image" alt="hojun" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">

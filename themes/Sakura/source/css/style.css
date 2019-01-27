@@ -1,5 +1,5 @@
 #veditor {
-    background-image: url(https://view.moezx.cc/images/2018/03/24/comment-bg.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/comment-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -713,13 +713,13 @@ audio:not([controls]) {
 a {
     background-color:transparent;
     text-decoration:none;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/ayuda.cur),auto
 }
 a:active,a:hover {
     outline:0
 }
 a:active {
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur),alias
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/work.cur),alias
 }
 abbr[title] {
     border-bottom:1px dotted
@@ -840,7 +840,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     margin-bottom:1.5em;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/texto.cur),auto
 }
 dfn,cite,em,i {
     font-style:italic
@@ -926,7 +926,7 @@ html {
 body {
     background:#fff;
     background-attachment:fixed;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/normal.cur),auto
 }
 blockquote:before,blockquote:after,q:before,q:after {
     content:""
@@ -1084,13 +1084,13 @@ a:hover,a:active {
     opacity:1
 }
 .video-play,.loadvideo {
-    background-image:url('https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/play@32x32.png')
+    background-image:url('https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/play@32x32.png')
 }
 .video-pause {
-    background-image:url('https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/pause@32x32.png')
+    background-image:url('https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/pause@32x32.png')
 }
 #video-add {
-    background-image:url('https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/add@32x32.png');
+    background-image:url('https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/add@32x32.png');
     bottom:45px;
     display:none
 }
@@ -2229,11 +2229,11 @@ h1.page-title.mb- {
     z-index:99;
     width:70px;
     height:900px;
-    background:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/scroll.png) no-repeat center;
+    background:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/scroll.png) no-repeat center;
     background-size:contain;
     -webkit-transition:all .5s ease-in-out;
     transition:all .5s ease-in-out;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur),auto;
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/No_Disponible.cur),auto;
     opacity:1
 }
 .cd-top.cd-is-visible {
@@ -2810,7 +2810,7 @@ to {
     height:40px;
     text-align:center;
     line-height:45px;
-    background-image:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/disqus-preloader.svg");
+    background-image:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/disqus-preloader.svg");
     background-position:center;
     background-repeat:no-repeat;
     background-size:auto 100%
@@ -3597,7 +3597,7 @@ a.page-numbers {
     background-color:rgba(255,255,255,0)
 }
 .comment-respond textarea {
-    background-image:url('https://view.moezx.cc/images/2018/03/24/comment-bg.png');
+    background-image:url('https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/comment-bg.png');
     background-size:contain;
     background-repeat:no-repeat;
     background-position:right;
@@ -3865,14 +3865,14 @@ li.feature-2 {
     background-color:rgba(0,0,0,.3)
 }
 .headertop.filter-grid::before {
-    background-image:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/grid.png)
+    background-image:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/grid.png)
 }
 .headertop.filter-dot::before {
-    background-image:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/dot.gif)
+    background-image:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/dot.gif)
 }
 @media(max-width:860px) {
     .headertop.filter-dot::before {
-    background-image:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/grid.png)
+    background-image:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/grid.png)
 }
 }.headertop-bar::after {
     content:'';
@@ -3934,7 +3934,7 @@ li.feature-2 {
 }
 .top-social_v2 li {
     margin-right: 0px !important; 
-    cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),auto !important;
+    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/ayuda.cur),auto !important;
 }
 }
 #bgvideo {
@@ -4225,7 +4225,7 @@ i.iconfont.js-toggle-search.iconsearch {
     visibility:visible;
     opacity:.99;
     animation:elastic .5s;
-    background-image:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.2.1/img/other/iloli.gif);
+    background-image:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/iloli.gif);
     background-repeat:no-repeat;
     background-position:bottom right
 }
@@ -4615,7 +4615,7 @@ i.iconfont.down {
     color:orange
 }
 #pagination .loading {
-    background:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/wordpress-rotating-ball-o.svg");
+    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/wordpress-rotating-ball-o.svg");
     background-position:center;
     background-repeat:no-repeat;
     color:#555;
@@ -4632,6 +4632,10 @@ i.iconfont.down {
 #pagination.pagination-archive {
     margin:80px 0
 }
+.share-mobile {
+    display: none !important;
+}
+
 @media(max-width:630px) {
     .works-list {
         width:100% !important;
@@ -4724,6 +4728,9 @@ i.iconfont.down {
     }
     .post-footer,.post-share,.post-like {
         display:none
+    }
+    .share-mobile {
+        display:inline-block !important;
     }
     .post-tags {
         text-align:center;
@@ -5387,7 +5394,7 @@ i.iconfont.js-toggle-search.iconsearch {
 }.oshimai {
     height:2em;
     width:6.11em;
-    background:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/oshimai.svg");
+    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/oshimai.svg");
     background-size:cover;
     margin:0 auto
 }
@@ -5533,7 +5540,7 @@ i.iconfont.js-toggle-search.iconsearch {
     border:0;
     color:#fff;
     line-height:1;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur),auto;
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/No_Disponible.cur),auto;
     font-size:14px;
     font-weight:500;
     padding:7px 15px;
@@ -5659,7 +5666,7 @@ button.botui-actions-buttons-button::-moz-focus-inner,input.botui-actions-text-i
     padding:0
 }
 button.botui-actions-buttons-button {
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur),auto;
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/No_Disponible.cur),auto;
     -webkit-appearance:button
 }
 .botui-app-container {
@@ -6200,19 +6207,6 @@ button.botui-actions-buttons-button {
     width:100%;
     height:100%
 }
-.hearthstone-deck {
-    overflow:hidden
-}
-.hearthstone-deck-container {
-    background:url(https://view.moezx.cc/images/2018/12/09/loading-bilibili.gif);
-    background-repeat:no-repeat;
-    background-size:94px 82px;
-    background-position:center;
-    border:8px solid #dec79b;
-    border-width:7px;
-    -o-border-image:url(https://view.moezx.cc/images/2018/12/09/hearthstone_border.png) 7 stretch;
-    border-image:url(https://view.moezx.cc/images/2018/12/09/hearthstone_border.png) 7 stretch
-}
 #Snow {
     position:fixed;
     top:0;
@@ -6481,12 +6475,6 @@ to {
     color:#fb7299;
     border-radius:3px;
     font-weight:400
-}
-.mashiro-author-info {
-    background:url('//static.mashiro.top/wp-content/themes/Sakura/images/LOGO-Unicorn-Gradient.svg');
-    width:200px;
-    height:200px;
-    margin:auto
 }
 .itempic {
     min-height:280px;
@@ -6918,7 +6906,7 @@ to {
     background-color:rgba(245,245,245,.8)
 }
 #emotion-toggle,.emotion-box,.on-hover,.emotion-item,.emoji-item,.tieba-container span {
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/No_Disponible.cur),auto
 }
 .alignright {
     width:auto !important
@@ -7318,7 +7306,7 @@ to {
     padding:2px;
     text-shadow:none;
     border-radius:0 0 5px 5px;
-    cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur),auto
+    cursor:url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/cursor/texto.cur),auto
 }
 .highlight-wrap code[data-rel]:before {
     color:#fff;
@@ -7622,7 +7610,7 @@ img[src*="#in-center"] {
 #banner_wave_1 {
     width:auto;
     height:65px;
-    background:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.1/img/Sakura/images/wave1.png") repeat-x;
+    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/wave1.png") repeat-x;
     _filter:alpha(opacity=80);
     position:absolute;
     bottom:0;
@@ -7636,7 +7624,7 @@ img[src*="#in-center"] {
 #banner_wave_2 {
     width:auto;
     height:80px;
-    background:url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.5.1/img/Sakura/images/wave2.png") repeat-x;
+    background:url("https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/wave2.png") repeat-x;
     _filter:alpha(opacity=80);
     position:absolute;
     bottom:0;
@@ -7785,4 +7773,8 @@ td.hljs-ln-numbers {
     vertical-align: top;
     left: 0;
     width: 30px;
+}
+.post-share:hover .show-share, .post-share:hover .sharehidden {
+    opacity: 1;
+    display: inline-block;
 }

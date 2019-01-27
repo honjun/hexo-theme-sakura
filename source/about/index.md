@@ -4,7 +4,7 @@ date: 2018-12-12 22:14:36
 keywords: 关于
 description: 
 comments: false
-photos: https://static.2heng.xin/wp-content/uploads//2018/01/KamigamiMabors-Saenai-Heroine-no-Sodatekata-Flat-11-1080p-x265-Ma10p-AAC.mkv_20180110_201351.552.jpg
+photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/about.jpg
 ---
 {% raw %}
 <div class="moe-mashiro" style="text-align:center; font-size: 50px; margin-bottom: 20px;">[さくら荘のhojun]</div>
