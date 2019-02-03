@@ -6,10 +6,10 @@ favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
 url: https://sakura.hojun.cn
 description: 好少年光芒万丈
-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4
+cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.5
 
 notice: hexo-Sakura主题已经开源，目前正在开发中...
-lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.5/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
