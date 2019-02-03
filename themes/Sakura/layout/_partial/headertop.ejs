@@ -27,7 +27,7 @@
                 </li>
               <% } else { %>
                 <li>
-                  <a href="<%= theme.social[i].url%>" target="_blank" class="social-github" title="github">
+                  <a href="<%= theme.social[i].url%>" target="_blank" class="social-github" title="<%- i %>">
                     <img src="<%- (theme.cdn || '') + theme.social[i].img%>">
                   </a>
                 </li>

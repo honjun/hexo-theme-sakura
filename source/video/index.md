@@ -50,8 +50,7 @@ photos:
           </div>
           <div class="card-content">
             <div class="card-title should-ellipsis activator grey-text text-darken-4">
-              ${video.title}<i class="material-icons right">
-              comment</i>
+              ${video.title}<i class="fa fa-commenting-o right"></i>
             </div>
             <p class="should-ellipsis-full">
             ${video.jp}</p>
@@ -66,8 +65,7 @@ photos:
           </div>
           <div class="card-reveal" style="display: none; transform: translateY(0%);">
             <span class="card-title grey-text text-darken-4">
-              ${video.title}<i class="material-icons right">
-              close</i>
+              ${video.title}<i class="fa fa-close right"></i>
             </span>
             <span>
               ${video.jp}<br>

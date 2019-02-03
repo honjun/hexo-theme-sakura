@@ -16,7 +16,7 @@
         <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/wordpress-rotating-ball-o.svg">
         <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/other/disqus-preloader.svg">
       </div>
-      <p style="color: #666666;">© 2018</p>
+      <p style="color: #666666;">&copy 2018</p>
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
@@ -35,9 +35,9 @@
 <script type="text/javascript">
 /* <![CDATA[ */
 if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  var Poi = {"pjax":"","movies":{"url":"https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  var Poi = {"pjax":"","movies":{"url": "<%- theme.movies.url%>","name":"<%- theme.movies.name%>","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 } else {
-  var Poi = {"pjax":"","movies":{"url":"https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+  var Poi = {"pjax":"","movies":{"url": "<%- theme.movies.url%>","name":"<%- theme.movies.name%>","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
 }
 /* ]]> */
 </script>

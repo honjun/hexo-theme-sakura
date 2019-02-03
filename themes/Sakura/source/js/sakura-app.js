@@ -1325,9 +1325,7 @@ var currentFontIsUbuntu = true;
 //     }
 // }
 mashiro_global.ini.normalize();
-if (window.location.hostname == "lovelive.2heng.xin") {
-    Poi.ajaxurl = Poi.ajaxurl.replace('//2heng.xin', '');
-}
+
 var home = location.href,
     s = $('#bgvideo')[0],
     Siren = {
@@ -1394,7 +1392,7 @@ var home = location.href,
             });
             var t = Poi.movies.name.split(","),
                 _t = t[Math.floor(Math.random() * t.length)];
-            $('#bgvideo').attr('src', Poi.movies.url + '/' + _t + '.mp4');
+            $('#bgvideo').attr('src', Poi.movies.url + '/' + _t);
             $('#bgvideo').attr('video-name', _t);
         }, LV: function () {
             var _btn = $('#video-btn');
