@@ -1,57 +1,56 @@
-<div id="page" class="site wrapper">
-  <header class="site-header no-select gizle sabit" role="banner">
-    <div class="site-top">
-      <div class="site-branding">
-        <span class="site-title">
-          <span class="logolink moe-mashiro">
-            <a href="/">
-              <span class="sakurasono"><%= theme.siteName %></span>
-              <span class="shironeko"><%= theme.shortName %></span>
-            </a>
-          </span>
+<header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono"><%= theme.siteName %></span>
+            <span class="shironeko"><%= theme.shortName %></span>
+          </a>
         </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
       </div>
-      <div class="searchbox search-form-submit">
-        <i class="iconfont js-toggle-search iconsearch icon-search">
-        </i>
+      <div class="line line2">
       </div>
-      <div id="show-nav" class="showNav mobile-fit">
-        <div class="line line1">
-        </div>
-        <div class="line line2">
-        </div>
-        <div class="line line3">
-        </div>
-      </div>
-      <div class="lower-cantiner">
-        <div class="lower">
-          <nav class="mobile-fit-control hide">
-            <ul id="menu-new" class="menu">
-              <% for (var menu in theme.menus){ %>
-                <li>
-                  <a href="<%- url_for(theme.menus[menu].path) %>">
-                    <span class="faa-parent animated-hover">
-                      <i class="fa  <%= theme.menus[menu].fa %>" aria-hidden="true"></i>
-                      <%= menu %>
-                    </span>
-                  </a>
-                  <% if (theme.menus[menu].submenus) { %>
-                    <ul class="sub-menu">
-                      <% for (var submenu in theme.menus[menu].submenus){ %>
-                        <li>
-                          <a href="<%- url_for(theme.menus[menu].submenus[submenu].path) %>">
-                            <i class="fa <%= theme.menus[menu].submenus[submenu].fa %>" aria-hidden="true"></i>
-                            <%= submenu %>
-                          </a>
-                        </li>
-                      <% } %>
-                    </ul>
-                  <% } %>
-                </li>
-              <% } %>
-            </ul>
-          </nav>
-        </div>
+      <div class="line line3">
       </div>
     </div>
-  </header>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            <% for (var menu in theme.menus){ %>
+              <li>
+                <a href="<%- url_for(theme.menus[menu].path) %>">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  <%= theme.menus[menu].fa %>" aria-hidden="true"></i>
+                    <%= menu %>
+                  </span>
+                </a>
+                <% if (theme.menus[menu].submenus) { %>
+                  <ul class="sub-menu">
+                    <% for (var submenu in theme.menus[menu].submenus){ %>
+                      <li>
+                        <a href="<%- url_for(theme.menus[menu].submenus[submenu].path) %>">
+                          <i class="fa <%= theme.menus[menu].submenus[submenu].fa %>" aria-hidden="true"></i>
+                          <%= submenu %>
+                        </a>
+                      </li>
+                    <% } %>
+                  </ul>
+                <% } %>
+              </li>
+            <% } %>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
