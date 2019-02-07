@@ -7,6 +7,8 @@ avatar: /img/custom/avatar.jpg
 url: https://sakura.hojun.cn
 description: Live your life with passion! With some drive!
 cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.5
+pjax: 1
+aplayer: 837456
 
 notice: hexo-Sakura主题已经开源，目前正在开发中...
 lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.5/img/loader/orange.progress-bar-stripe-loader.svg
