@@ -6,12 +6,11 @@ favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
 url: https://sakura.hojun.cn
 description: Live your life with passion! With some drive!
-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.5
+cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 pjax: 1
-aplayer: 837456
 
 notice: hexo-Sakura主题已经开源，目前正在开发中...
-lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.5/img/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
@@ -24,19 +23,19 @@ menus:
   } }
   清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
-    番组: {path: /video, fa: fa-film faa-vertical }, 
-    歌单: {path: /music, fa: fa-headphones },
+    番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
+    歌单: {path: /music/, fa: fa-headphones },
     图集: {path: /tags/图集/, fa: fa-photo }
   } }
-  留言板: { path: /comment, fa: fa-pencil-square-o faa-tada }
-  友人帐: { path: /links, fa: fa-link faa-shake }
-  赞赏: { path: /donate, fa: fa-heart faa-pulse }
+  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  友人帐: { path: /links/, fa: fa-link faa-shake }
+  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
-    我？: {path: /about, fa: fa-meetup}, 
-    主题: {path: /theme-sakura, fa: iconfont icon-sakura },
-    Lab: {path: /lab, fa: fa-cogs },
+    我？: {path: /about/, fa: fa-meetup}, 
+    主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
+    Lab: {path: /lab/, fa: fa-cogs },
   } }
-  客户端: { path: /client, fa: fa-android faa-vertical }
+  客户端: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
 # full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
@@ -83,8 +82,9 @@ msocial:
   qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
 
 donate:
-  alipay: /img/custom/donate/AliPayQR.png
-  wechat: /img/custom/donate/WeChanQR.png
+  alipay: /img/custom/donate/AliPayQR.jpg
+  wechat: /img/custom/donate/WeChanQR.jpg
+  wechatSQ: /img/custom/donate/WeChanSQ.jpg
 
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 movies:
@@ -92,7 +92,23 @@ movies:
   # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
   name: Unbroken.mp4
 
+aplayer: 
+  id: 2660651585
+  server: netease
+  type: playlist
+  fixed: true
+  mini: false
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
 
+# Valine
+valine: true
+v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
+v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
 
 # Git-pages server info
 gitPageServerName: Github Pages

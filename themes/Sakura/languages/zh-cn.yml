@@ -34,15 +34,15 @@ contents: 文章目录
 技术:
     zh: 野生技术协会
     en: Geek – Only for Love
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.5/img/banner/coding.jpg
+    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg
 生活:
     zh: 生活
     en: live
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.5/img/banner/writing.jpg
+    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
 
 #tag
 悦读:
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.5/img/banner/reading.jpg
+    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
 
 none: 无
 insight:

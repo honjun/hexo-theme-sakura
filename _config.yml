@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: /
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -84,11 +84,6 @@ deploy:
     # github: https://github.com/honjun/honjun.github.io.git
     coding: https://git.coding.net/hojun/hojun.git
   branch: master
-
-# Valine
-valine: true
-v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
 
 #RSS
 feed:

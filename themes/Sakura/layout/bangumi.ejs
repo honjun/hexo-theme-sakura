@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/css/bangumi.css">
+<div class="pattern-center-blank"></div>
+<div id="content" class="site-content">
+  <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+    <header class="page-header"><h1 class="cat-title">番组计划</h1> <span class="cat-des"><p>这里将是永远的回忆</p> </span></header>
+    <% if (page.bangumis) { %>
+    <div class="bangumi">
+      <div class="row" id="rootRow">
+        <% (page.bangumis||[]).forEach(function (bangumi, index) { %>
+          <div class="col s12 m6" id="bangumi-<%- index %>">
+            <div class="card hoverable" style="overflow: visible;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="activator itempic lazyload" style="background-image: url(<%- bangumi.img %>);" data-src="<%- bangumi.img %>">
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                  <%- bangumi.title %><i class="fa fa-commenting-o right"></i>
+                </div>
+                <p class="should-ellipsis-full">
+                <%- bangumi.jp %></p>
+                <ul class="skill-list">
+                  <li class="skill">
+                    <div>
+                    <%- bangumi.status %></div>
+                    <progress class="skill-1" max="100" value="<%- bangumi.progress %>">
+                    </progress>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <span class="card-title grey-text text-darken-4">
+                  <%- bangumi.title %><i class="fa fa-close right"></i>
+                </span>
+                <span>
+                  <%- bangumi.jp %><br>
+                </span>
+                <span>
+                  放送时间: <%- bangumi.time %><span>
+                    <p><%- bangumi.desc %></p>
+                    <ul class="skill-list">
+                      <li class="skill">
+                        <div>
+                        <%- bangumi.status %></div>
+                        <progress class="skill-1" max="100" value="<%- bangumi.progress %>">
+                        </progress>
+                      </li>
+                    </ul>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+    <% } %>
+  </article>
+</div>

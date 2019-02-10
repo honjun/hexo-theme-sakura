@@ -1,4 +1,3 @@
-  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
   <div class="pattern-center-blank"></div>
   <% if (post.photos && post.photos.length){ %>
     <div class="pattern-center ">
@@ -15,37 +14,18 @@
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
       <%- post.content %>
       <!-- .entry-content -->
-      <% if (config.valine && post.comments) { %>
-        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-        <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-        <div id="vcomments"></div>
-        <script>
-          new Valine({
-            el: '#vcomments',
-            appId: "<%=config.v_appId %>",
-            appKey: "<%=config.v_appKey %>",
-            placeholder: "你是我一生只会遇见一次的惊喜 ..."
-          })
-        </script>
-      <% } %>
+      <%- partial('_partial/comment') %>
       <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
       <footer class="post-footer">
         <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
         <div class="post-tags">
-        </div>
-        
-        <div class="post-like">
-          <a href="javascript:;" data-action="ding" data-id="1" class="specsZan ">
-            <i class="iconfont icon-like"></i> <span class="count">
-            0</span>
-          </a>
         </div>
         <div class="post-share">
           <div class="social-share sharehidden share-component"></div>
           <i class="iconfont show-share icon-forward"></i>
         </div>
       </footer><!-- .entry-footer -->
-      </article>
+    </article>
       <!-- #post-## -->
       <div class="toc-container" style="height: 1053px;">
       <div class="toc" style="background: none;"></div>
@@ -63,6 +43,5 @@
         <hr>
         <p><i class="iconfont icon-write"></i><%- theme.description%></p>
       </section>
-    </main><!-- #main -->
   </div><!-- #primary -->
 </div>

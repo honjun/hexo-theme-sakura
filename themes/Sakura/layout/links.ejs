@@ -2,7 +2,7 @@
 </div>
 <div class="pattern-center ">
   <div class="pattern-attachment-img">
-    <img src="<%= post.photos[0]%>" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0]%>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    <img src="<%= page.photos %>" src="<%- theme.lazyloadImg%>" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
   </div>
   <header class="pattern-header ">
     <h1 class="entry-title">
@@ -21,186 +21,66 @@
     4、头像（HTTPS*，可在评论区上传）</p>
     <p>
       For Example：<br>
-      ★ Name: Mashiro<br>
-      ★ Bio: 樱花庄的白猫<br>
-      ★ URL: https://2heng.xin<br>
-      ★ Avatar: <a href="https://view.moezx.cc/image/6vRT" target="_blank" rel="nofollow">
+      ★ Name: hojun<br>
+      ★ Bio: 好少年光芒万丈<br>
+      ★ URL: https://www.hojun.cn<br>
+      ★ Avatar: <a href="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg" target="_blank" rel="nofollow">
       获取嵌入代码</a>
     </p>
     <p style="font-size: 13px">
     ※ 为保证友链质量，今后新申请的友链将经过筛选，请在收到我的回复邮件后再于贵站添加本站链接。原则上过去已添加友链不会轻易删除，如遇死链、改变网站用途（友链主要针对的是同类的博客），将单独移至“阵亡将士”分类中，下次清理时未整改的将移除；如遇盗版、破解、网页植入挖矿脚本、极低质量内容、单方面移除本站链接，将直接移除，恕不另行通知。</p>
-    <div class="links">
-      <h3 class="link-title" id="toc-head-1" tabindex="-1">
-      <span class="fake-title">
-      1. 个人项目</span>
-      </h3>
-      <div class="link-description">
-      充分说明这家伙是条咸鱼 &lt; (￣︶￣)&gt;</div>
-      <ul class="link-items fontSmooth">
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://shino.cc/fgvf" title="Google 镜像" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://cloud.moezx.cc/Picture/svg/landscape/fields.svg" src="https://cloud.moezx.cc/Picture/svg/landscape/fields.svg">
-            <span class="sitename">
-            Google</span>
-            <div class="linkdes">
-            Google 镜像</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://t.shino.cc" title="Telegram 镜像" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://cloud.moezx.cc/Picture/svg/landscape/mill.svg" src="https://cloud.moezx.cc/Picture/svg/landscape/mill.svg">
-            <span class="sitename">
-            Telegram</span>
-            <div class="linkdes">
-            Telegram 镜像</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://shino.cc/ksdf" title="中文维基镜像" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://cloud.moezx.cc/Picture/svg/landscape/desert-1.svg" src="https://cloud.moezx.cc/Picture/svg/landscape/desert-1.svg">
-            <span class="sitename">
-            Wikipedia</span>
-            <div class="linkdes">
-            中文维基镜像</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://2heng.xin/lovelive/" title="LoveLive 日服档线预测" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://view.moezx.cc/images/2018/01/27/a_46895067_26.th.jpg" src="https://view.moezx.cc/images/2018/01/27/a_46895067_26.th.jpg">
-            <span class="sitename">
-            ラブライブ</span>
-            <div class="linkdes">
-            LoveLive 日服档线预测</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://deemo.shino.cc/" title="Deemo 歌曲封面集" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://view.moezx.cc/images/2018/04/06/Deemo43628805_by_T..jpg" src="https://view.moezx.cc/images/2018/04/06/Deemo43628805_by_T..jpg">
-            <span class="sitename">
-            古树旋律复刻</span>
-            <div class="linkdes">
-            Deemo 歌曲封面集</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://mashiro.top/" title="Notes~" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://view.moezx.cc/images/2018/01/15/QPID61105583by.md.png" src="https://view.moezx.cc/images/2018/01/15/QPID61105583by.md.png">
-            <span class="sitename">
-            小本本</span>
-            <div class="linkdes">
-            Notes~</div>
-          </a>
-        </li>
-      </ul>
-      <h3 class="link-title" id="toc-head-2" tabindex="-1">
-      <span class="fake-title">
-      2. 私人服务</span>
-      </h3>
-      <div class="link-description">
-      稳定性？不存在的 ∠( ᐛ 」∠)＿</div>
-      <ul class="link-items fontSmooth">
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://www.moezx.cc/" title="CNAME免费接入" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://cloud.moezx.cc/Picture/svg/landscape2/sea.svg" src="https://cloud.moezx.cc/Picture/svg/landscape2/sea.svg">
-            <span class="sitename">
-            Cloudflare CDN</span>
-            <div class="linkdes">
-            CNAME免费接入</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://io.shino.cc/" title="远程桌面 2333" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://cloud.moezx.cc/Picture/svg/landscape/iceberg.svg" src="https://cloud.moezx.cc/Picture/svg/landscape/iceberg.svg">
-            <span class="sitename">
-            CloudOS</span>
-            <div class="linkdes">
-            远程桌面 2333</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://music.shino.cc/" title="各大平台音乐解析" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://cloud.moezx.cc/Picture/svg/landscape2/reindeer.svg" src="https://cloud.moezx.cc/Picture/svg/landscape2/reindeer.svg">
-            <span class="sitename">
-            Music Box</span>
-            <div class="linkdes">
-            各大平台音乐解析</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://view.moezx.cc/" title="一个简单的图床" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://cloud.moezx.cc/Picture/svg/landscape/beach.svg" src="https://cloud.moezx.cc/Picture/svg/landscape/beach.svg">
-            <span class="sitename">
-            Room 202</span>
-            <div class="linkdes">
-            一个简单的图床</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://pan.2heng.xin" title="自建网盘" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://cloud.moezx.cc/Picture/svg/landscape/desert.svg" src="https://cloud.moezx.cc/Picture/svg/landscape/desert.svg">
-            <span class="sitename">
-            Sakura Drive</span>
-            <div class="linkdes">
-            自建网盘</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://re.shino.cc/d/UbkNywRma/home?refresh=30s&amp;orgId=2" title="Grafana &amp; Zabbix" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://cloud.moezx.cc/Picture/svg/landscape2/lake-1.svg" src="https://cloud.moezx.cc/Picture/svg/landscape2/lake-1.svg">
-            <span class="sitename">
-            服务器监控</span>
-            <div class="linkdes">
-            Grafana &amp; Zabbix</div>
-          </a>
-        </li>
-      </ul>
-      <h3 class="link-title" id="toc-head-3" tabindex="-1">
-      <span class="fake-title">
-      3. 后宫佳丽</span>
-      </h3>
-      <div class="link-description">
-      BOY♂NEXT♂DOOR</div>
-      <ul class="link-items fontSmooth">
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://ia.jifangcheng.com" title="What Makes Me, Me" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://view.moezx.cc/images/2018/03/07/9134003s88v4.png" src="https://view.moezx.cc/images/2018/03/07/9134003s88v4.png">
-            <span class="sitename">
-            @iawia002</span>
-            <div class="linkdes">
-            What Makes Me, Me</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://lovesnowbest.site/" title="愿你成为自己想成为的人" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://view.moezx.cc/images/2018/02/01/favicon.jpg" src="https://view.moezx.cc/images/2018/02/01/favicon.jpg">
-            <span class="sitename">
-            loveSnowBest</span>
-            <div class="linkdes">
-            愿你成为自己想成为的人</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://eriri.ink" title="Life is what you make it." target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://secure.gravatar.com/avatar/86a41c9425019d1651a6717021a8ca83" src="https://secure.gravatar.com/avatar/86a41c9425019d1651a6717021a8ca83">
-            <span class="sitename">
-            Siphils</span>
-            <div class="linkdes">
-            Life is what you make it.</div>
-          </a>
-        </li>
-        <li class="link-item">
-          <a class="link-item-inner effect-apollo" href="https://chanshiyu.com/" title="蝉鸣如雨 花宵道中" target="_blank" rel="friend">
-            <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="https://view.moezx.cc/images/2018/01/05/2af1a90f-4b60-4abd-a7b3-a64a903aa921.png" src="https://view.moezx.cc/images/2018/01/05/2af1a90f-4b60-4abd-a7b3-a64a903aa921.png">
-            <span class="sitename">
-            蝉時雨</span>
-            <div class="linkdes">
-            蝉鸣如雨 花宵道中</div>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <% if (page.links) { %>
+      <div class="links">
+        <% (page.links||[]).forEach(function (group, index) { %>
+          <h3 class="link-title"><span class="fake-title"><%- index + 1 %>. <%- group.group %></span></h3>
+          <% if (group.desc) { %>
+            <div class="link-description"><%- group.desc %></div>
+          <% } %>
+          <ul class="link-items fontSmooth">
+            <% (group.items||[]).forEach(function (item) { %>
+              <li class="link-item">
+                <a class="link-item-inner effect-apollo" href="<%- item.url %>" title="<%- item.desc %>" target="_blank" rel="friend">
+                  <img class="lazyload" onerror="imgError(this,1)" src="<%- theme.lazyloadImg%>" data-src="<%- item.img %>" src="<%- item.img %>">
+                  <span class="sitename">
+                  <%- item.name %></span>
+                  <div class="linkdes">
+                  <%- item.desc %></div>
+                </a>
+              </li>
+            <% }) %>
+          </ul>
+        <% }) %>
+      </div>
+    <% } %>
+    <%- partial('_partial/comment', {post: page})  %>
+    <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+    <footer class="post-footer">
+      <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+      <div class="post-tags">
+      </div>
+      <div class="post-share">
+        <div class="social-share sharehidden share-component"></div>
+        <i class="iconfont show-share icon-forward"></i>
+      </div>
+    </footer><!-- .entry-footer -->
   </article>
-  <div class="have-toc">
+  <div class="toc-container" style="height: 1053px;">
+  <div class="toc" style="background: none;"></div>
+  </div>
+  <section class="author-profile">
+    <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <a href="/about/" class="profile gravatar"><img src="<%- (theme.cdn || '') + theme.avatar%>" itemprop="image" alt="hojun" height="70" width="70"></a>
+      <div class="meta">
+        <span class="title">Author</span>
+        <h3 itemprop="name">
+        <a href="<%- theme.url%>" itemprop="url" rel="author">hojun</a>
+        </h3>
+      </div>
+    </div>
+    <hr>
+    <p><i class="iconfont icon-write"></i><%- theme.description%></p>
+  </section>
+<!--   <div class="have-toc">
   </div>
   <div class="toc-container" style="height: 4886.5px;">
     <div class="toc">
@@ -235,5 +115,5 @@
         </li>
       </ol>
     </div>
-  </div>
+  </div> -->
 </div>

@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="/css/donate.css">
+<div class="pattern-center-blank">
+</div>
+<div class="pattern-center ">
+  <div class="pattern-attachment-img">
+    <img src="<%= page.photos %>" src="<%- theme.lazyloadImg%>" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+  </div>
+  <header class="pattern-header ">
+    <h1 class="entry-title">谢谢饲主了喵~</h1>
+  </header>
+</div>
+<div id="content" class="site-content">
+  <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+  如果喜欢我的博客，可以考虑资助一下哦~非常感激！
+    <div id="root">
+      <div class="root">
+        <a href="https://github.com/Kaiyuan/donate-page" target="_blank" class="pos-f tr3" title="Github"><span id="github"></span></a>
+        <ul id="donateBox" class="list pos-f tr3">
+          <!-- <li id="PayPal"><a href="https://www.paypal.me/KaiyuanXie" target="_blank">PayPal</a></li> -->
+          <!-- <li id="BTC" data-footnote="Copy addres and show QRCod"><button id="BTCBn"  data-clipboard-target="#btc-key" alt="Copy to clipboard">Bitcoin</button></li> -->
+          <li id="AliPay">AliPay</li>
+          <li id="WeChat">WeChat</li>
+        </ul>
+        <div id="DonateText" class="tr3">Donate</div>
+        <div id="QRBox" class="pos-f left-100">
+          <div id="MainBox"></div>
+        </div>
+        <!-- Bitcoin 账号 -->
+        <!-- <input id="btc-key" type="text" value="14JkMR68n4PBASB3TgvpjtaPTbfffSwFbW" readonly="readonly"> -->
+      </div>
+    </div>
+    <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+    <footer class="post-footer">
+      <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+      <div class="post-tags">
+      </div>
+      <div class="post-share">
+        <div class="social-share sharehidden share-component"></div>
+        <i class="iconfont show-share icon-forward"></i>
+      </div>
+    </footer><!-- .entry-footer -->
+  </article>
+  <div class="toc-container" style="height: 1053px;">
+  <div class="toc" style="background: none;"></div>
+  </div>
+  <section class="author-profile">
+    <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <a href="/about/" class="profile gravatar"><img src="<%- (theme.cdn || '') + theme.avatar%>" itemprop="image" alt="hojun" height="70" width="70"></a>
+      <div class="meta">
+        <span class="title">Author</span>
+        <h3 itemprop="name">
+        <a href="<%- theme.url%>" itemprop="url" rel="author">hojun</a>
+        </h3>
+      </div>
+    </div>
+    <hr>
+    <p><i class="iconfont icon-write"></i><%- theme.description%></p>
+  </section>
+</div>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script> -->
+  <script>
+    jQuery(document).ready(function() {
+    var QRBox = $('#QRBox');
+    var MainBox = $('#MainBox');
+    var BTCQR = '/images/donate/BTCQR.png'; // 二维码路径
+    var AliPayQR  = '<%- (theme.cdn || '') + theme.donate.alipay %>';
+    var WeChanQR  = '<%- (theme.cdn || '') + theme.donate.wechatSQ %>';
+
+    function showQR(QR) {
+      if (QR) {
+        MainBox.css('background-image','url('+QR+')');
+      }
+      $('#DonateText,#donateBox,#github').addClass('blur');
+      QRBox.fadeIn(300,function(argument) {
+        MainBox.addClass('showQR');
+      });
+    }
+
+    $('#donateBox>li').click(function(event) {
+      var thisID  = $(this).attr('id');
+      if (thisID === 'BTC') {
+        new ClipboardJS('#BTCBn');
+        new ClipboardJS('.btnsss');
+        showQR(BTCQR);
+      } else if (thisID === 'AliPay') {
+        showQR(AliPayQR);
+      } else if (thisID === 'WeChat') {
+        showQR(WeChanQR);
+      }
+    });
+
+    MainBox.click(function(event) {
+      MainBox.removeClass('showQR').addClass('hideQR');
+      setTimeout (function(a) {
+        QRBox.fadeOut(300,function(argument) {
+          MainBox.removeClass('hideQR');
+        });
+        $('#DonateText,#donateBox,#github').removeClass('blur');
+      },600);
+
+    });
+  });
+  </script>
