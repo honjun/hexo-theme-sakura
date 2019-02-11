@@ -1,6 +1,6 @@
 # site name
-siteName: さくら荘その
-shortName: hojun
+prefixName: さくら荘その
+siteName: hojun
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
@@ -38,10 +38,6 @@ menus:
   客户端: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
-# full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
-fullHttps: false
-
-
 
 # Home page sort type: -1: newer first，1: older first.
 homePageSortType: -1
@@ -60,11 +56,6 @@ startdash:
 
 # your site build time or founded date
 siteBuildingTime: 07/17/2018
-
-
-# cover info config
-coverTitle: 
-coverDescription: XXX的博客
 
 #social  url, img PC端配置
 social:
@@ -109,9 +100,3 @@ aplayer:
 valine: true
 v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
 v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
-
-# Git-pages server info
-gitPageServerName: Github Pages
-gitPageServerUrl: https://github.com/
-codingPageServerName: Coding Pages
-codingPageServerUrl: https://pages.coding.me

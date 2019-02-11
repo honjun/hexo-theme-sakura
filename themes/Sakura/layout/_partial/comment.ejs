@@ -1,13 +1,13 @@
 <% if (theme.valine && post.comments) { %>
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
   <div id="vcomments"></div>
   <script>
-    new Valine({
-      el: '#vcomments',
-      appId: "<%= theme.v_appId %>",
-      appKey: "<%= theme.v_appKey %>",
-      placeholder: "你是我一生只会遇见一次的惊喜 ..."
-    })
+      new Valine({
+        el: '#vcomments',
+        appId: "<%= theme.v_appId %>",
+        appKey: "<%= theme.v_appKey %>",
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
   </script>
 <% } %>
