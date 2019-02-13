@@ -7793,3 +7793,6 @@ td.hljs-ln-numbers {
     opacity: 1;
     display: inline-block;
 }
+#page {
+    min-height: calc(100vh - 150px);
+}

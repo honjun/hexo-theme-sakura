@@ -6,6 +6,16 @@ hexo-theme-sakura主题
 
 正在开发中......
 
+## 赞赏作者
+如果喜欢hexo-theme-sakura主题，可以考虑资助一下哦~非常感激！
+
+### Paypal
+[paypal](https://www.paypal.me/hojuncn)
+### Alipay 支付宝
+![支付宝](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/AliPayQR.jpg)
+### WeChat Pay 微信赞赏
+![微信](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/WeChanSQ.jpg)
+
 ## 未完善的使用教程
 
 那啥？老实说我目前也不是很有条理233333333~
