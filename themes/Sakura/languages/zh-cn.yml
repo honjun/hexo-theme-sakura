@@ -30,6 +30,16 @@ connect: '联系我们'
 post_total_count: 嗯，目前共计%d篇文章
 read_more: '阅读全文'
 contents: 文章目录
+
+none: 无
+insight:
+    hint: '请输入关键词...'
+    posts: '文章'
+    pages: '页面'
+    categories: '分类'
+    tags: '标签'
+    untitled: '(无标题)'
+
 #category
 技术:
     zh: 野生技术协会
@@ -43,12 +53,3 @@ contents: 文章目录
 #tag
 悦读:
     img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
-
-none: 无
-insight:
-    hint: '请输入关键词...'
-    posts: '文章'
-    pages: '页面'
-    categories: '分类'
-    tags: '标签'
-    untitled: '(无标题)'

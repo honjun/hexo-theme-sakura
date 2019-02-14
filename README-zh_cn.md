@@ -6,6 +6,25 @@ hexo-theme-sakura主题
 
 正在开发中......
 
+![](https://wx3.sinaimg.cn/large/006bYVyvly1g069tuf42oj312w0m8ndq.jpg)
+
+## 交流群
+若你是使用者，加群QQ: 801511924
+若你是创作者，加群QQ: 194472590
+
+
+## 主题特性
+
+ - 首页视频
+ - 首页随机封面
+ - 图片懒加载
+ - valine评论
+ - fancy-box相册
+ - pjax支持
+ - aplayer音乐播放器
+ - 多级导航菜单（按现在大部分hexo主题来说，这也算是个特性了）
+
+
 ## 赞赏作者
 如果喜欢hexo-theme-sakura主题，可以考虑资助一下哦~非常感激！
 
@@ -172,6 +191,30 @@ v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
 v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
 ```
 
+## 分类页和标签页配置
+
+咳咳，之前忘记说了，配置项在\themes\Sakura\languages\zh-cn.yml里。新增一个分类或标签最好加下哦，当然嫌麻烦可以直接使用一张默认图片（可以改主题或者直接把404图片替换下，征求下意见要不要给这个在配置文件中加个开关，可以issue或群里提出来），现在是没设置的话会使用那种倒立小狗404哦。
+```yml
+#category
+# 按分类名创建
+技术:
+    #中文标题
+    zh: 野生技术协会 
+    # 英文标题
+    en: Geek – Only for Love
+    # 封面图片
+    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg
+生活:
+    zh: 生活
+    en: live
+    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
+
+#tag
+# 标签名即是标题
+悦读:
+    # 封面图片
+    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
+```
 ## 单页面配置
 
 ### 番组计划页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）
