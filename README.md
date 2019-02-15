@@ -1,321 +1,347 @@
-hexo-theme-sakura主题 （本文档求英语大佬翻译成英文文档一分）
+hexo-theme-sakura [中文文档](https://github.com/honjun/hexo-theme-sakura/blob/master/README-zh_cn.md)
 
-基于WordPress主题[Sakura](https://github.com/mashirozx/Sakura/)主题修改成Hexo的主题。
+Based on the WordPress theme [Sakura](https://github.com/mashirozx/Sakura/) modified into Hexo theme.
 
-[demo预览](https://sakura.hojun.cn)
+【Demo preview](https://sakura.hojun.cn)
 
-正在开发中......
+in development......
 
 ![](https://wx3.sinaimg.cn/large/006bYVyvly1g069tuf42oj312w0m8ndq.jpg)
 
-## 交流群
-若你是使用者，加群QQ: 801511924
+## Exchange group
+If you are a user, plus group QQ: 801511924
 
-若你是创作者，加群QQ: 194472590
-
-
-## 主题特性
-
- - 首页视频
- - 首页随机封面
- - 图片懒加载
- - valine评论
- - fancy-box相册
- - pjax支持
- - aplayer音乐播放器
- - 多级导航菜单（按现在大部分hexo主题来说，这也算是个特性了）
+If you are a creator, plus group QQ: 194472590
 
 
-## 赞赏作者
-如果喜欢hexo-theme-sakura主题，可以考虑资助一下哦~非常感激！
+## Theme feature
 
-[paypal](https://www.paypal.me/hojuncn) | [Alipay 支付宝](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/AliPayQR.jpg) | [WeChat Pay 微信支付](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/WeChanSQ.jpg)
+ - Home big screen video
+ - Home random cover
+ - Picture lazy loading
+ - Valine review
+ - Fancy-box photo album
+ - Pjax support, music is uninterrupted
+ - Aplayer music player
+ - Multi-level navigation menu (this is a feature as far as most hexo themes are concerned)
 
-## 未完善的使用教程
 
-那啥？老实说我目前也不是很有条理233333333~
+## Appreciate the author
+If you like the hexo-theme-sakura theme, you can consider funding it~ I am very grateful!
 
-## 1、主题下载安装
+[paypal](https://www.paypal.me/hojuncn) | [Alipay](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/AliPayQR.jpg) | [WeChat Pay](https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/donate/WeChanSQ.jpg)
 
-[hexo-theme-sakura](https://github.com/honjun/hexo-theme-sakura)建议下载压缩包格式，因为除了主题内容还有些source的配置对新手来说比较太麻烦，直接下载解压就省去这些麻烦咯。
+## Incomplete use tutorial
 
-下载好后解压到博客根目录（不是主题目录哦，重复的选择替换）。接着在命令行（cmd、bash）运行`npm i`安装依赖。
+well? Honestly, I am not very organized at the moment 233333333~
 
-## 2、主题配置
+## 1、sakura theme download and install
 
-### 博客根目录下的_config配置
+[hexo-theme-sakura](https://github.com/honjun/hexo-theme-sakura)recommends downloading the compressed package format, because in addition to the theme content, some source configuration is too much trouble for the novice, directly download the decompression to save these troubles.
+
+After downloading, extract it to the root directory of the blog (not the theme directory, repeat the selection and replace). Then run the npm iinstallation dependencies on the command line (cmd, bash) .
+
+## configuration
+
+### _config configuration in the root directory of the blog
 
 ```yml
 # Site
-title: 你的站点名
-subtitle:
-description: 站点简介
-keywords:
-author: 作者名
-language: zh-cn
-timezone:
+title : Your site name 
+subtitle :
+description : Site Profile 
+Keywords :
+author : Author name 
+language : en zh-cn 
+timezone :
 ```
 
 ```yml
-deploy:
-  type: git
-  repo: 
-    github: 你的github仓库地址
-    # coding: 你的coding仓库地址
-  branch: master
+Deploy :
+  type : git 
+  repo : 
+     github : your github repository address 
+    # coding: your coding repository address 
+  branch : master
 ```
 
-### 主题目录下的_config配置
+### _config configuration under the theme directory
 
-其中标明【改】的是需要修改部门，标明【选】是可改可不改，标明【非】是不用改的部分
+The part marked with [Change] is the need to modify the department, indicating that [Select] can be changed or not, and the part marked with [Non] is not changed.
 ```yml
-# site name
-# 站点名 【改】
-prefixName: さくら荘その
-siteName: hojun
+# site name 
+#
+站名称[改] prefixName :さくら荘その
+siteName : hojun
 
-# favicon and site master avatar
-# 站点的favicon和头像 输入图片路径（下面的配置是都是cdn的相对路径，没有cdn请填写完整路径，建议使用jsdeliver搭建一个cdn啦，先去下载我的cdn替换下图片就行了，简单方便~）【改】
-favicon: /images/favicon.ico
-avatar: /img/custom/avatar.jpg
+# favicon and site master avatar 
+#站favicon and avatar input image path (the following configuration is the relative path of cdn, please fill in the full path without cdn, it is recommended to use jsdeliver to build a cdn, first download my cdn replacement The picture is OK, simple and convenient~) [Change] 
+favicon : /images/favicon.ico 
+avatar : /img/custom/avatar.jpg
 
-# 站点url 【改】
-url: https://sakura.hojun.cn
+#站url [Change] 
+url : https://sakura.hojun.cn
 
-# 站点介绍（或者说是个人签名）【改】
-description: Live your life with passion! With some drive!
+#站介绍(或个人
+签名符) [Change] description : Live your life with passion! With some drive!
 
-# 站点cdn，没有就为空 【改】  若是cdn为空，一些图片地址就要填完整地址了，比如之前avatar就要填https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/custom/avatar.jpg
-cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+#站cdn, no is empty [change] If cdn is empty, some image addresses must be filled in the complete address, such as the previous avatar to fill https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/ img / Custom / avatar.jpg 
+CDN : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 
-# 开启pjax 【选】
-pjax: 1
+#开启pjax [Select] 
+pjax : 1
 
-# 站点首页的公告信息 【改】
-notice: hexo-Sakura主题已经开源，目前正在开发中...
+#
+站首页's announcement information [Change] notice : hexo-Sakura theme has been open source, currently under development...
 
-# 懒加载的加载中图片 【选】
-lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
+#懒Loaded loading image [Select] 
+lazyloadImg : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
 
-# 站点菜单配置 【选】
-menus:
-  首页: { path: /, fa: fa-fort-awesome faa-shake }
-  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
-    技术: {path: /categories/技术/, fa: fa-code }, 
-    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
-    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
-    随想: {path: /categories/随想/, fa: fa-commenting-o },
-    转载: {path: /categories/转载/, fa: fa-book }
-  } }
-  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
-    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
-    番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
-    歌单: {path: /music/, fa: fa-headphones },
-    图集: {path: /tags/图集/, fa: fa-photo }
-  } }
-  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
-  友人帐: { path: /links/, fa: fa-link faa-shake }
-  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
-  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
-    我？: {path: /about/, fa: fa-meetup}, 
-    主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
-    Lab: {path: /lab/, fa: fa-cogs },
-  } }
-  客户端: { path: /client/, fa: fa-android faa-vertical }
-  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+#站菜单 Configuration [Select] 
+menus :
+   Home : { path: /, fa: fa-fort-awesome faa-shake } 
+  Archive : { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    Technology : { Path: /categories/technology/, fa: fa-code }, 
+    life : {path: /categories/life/, fa: fa-file-text-o }, 
+    resources : {path: /categories/resources/, fa: Fa-cloud-download }, 
+    thoughts : {path: /categories/随想/, fa: fa-commenting-o }, 
+    reproduced : {path: /categories/reproduced/, fa: fa-book } 
+  } } 
+  List : { path : javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+    Book :{path: /tags/reading/, fa: fa-th-list faa-bounce }, 
+    group : {path: /bangumi/, fa: fa-film faa-vertical }, 
+    song list : {path: /music /, fa: fa-headphones }, 
+    atlas : {path: /tags/atlas/, fa: fa-photo } 
+  } } 
+  Message board : { path: /comment/, fa: fa-pencil-square-o faa -tada } 
+  Friendly account : { path: /links/, fa: fa-link faa-shake } 
+  Appreciation : { path: /donate/, fa: fa-heart faa-pulse } 
+  About : { path: /, fa: fa -leaf faa-wrench , submenus: { 
+    I? : {path: /about/, fa: fa-meetup}, 
+    Subject : {path: /theme-sakura/, fa: iconfont icon-sakura }, 
+    Lab: {path: /lab/, fa: fa-cogs }, 
+  } } 
+  Client : { path: /client/, fa: fa-android faa-vertical } 
+  RSS : { path: /atom.xml, fa: fa- Rss faa-pulse }
 
-# Home page sort type: -1: newer first，1: older first. 【非】
-homePageSortType: -1
+# Home page sort type: -1: newer first,1: older first. [ 
+None ] homePageSortType : -1
 
-# Home page article shown number) 【非】
-homeArticleShown: 10
+# Home page article shown number) [非] 
+homeArticleShown : 10
 
-# 背景图片 【选】
-bgn: 8
+#背景图片[Select] 
+bgn : 8
 
-# startdash面板 url, title, desc img 【改】
-startdash: 
-  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
-  - {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
-  - {url: /, title: hojun的万事屋, desc: 技术服务, img: /img/startdash/wangshiwu.jpg}
-
-
-# your site build time or founded date
-# 你的站点建立日期 【改】
-siteBuildingTime: 07/17/2018
+# startdash面板url, title, desc img [Change] 
+startdash :
+  - {url: /theme-sakura/, title: Sakura, desc: The site hexo theme, img: /img/startdash/sakura.md.png} 
+  - {url: http://space.bilibili.com/271849279, Title: Bilibili, desc: blogger's b-station video, img: /img/startdash/bilibili.jpg} 
+  - {url: /, title: hojun's masterhouse, desc: technical service, img: /img/startdash/wangshiwu .jpg}
 
 
-# 社交按钮(social)  url, img PC端配置 【改】
-social:
-  github: {url: http://github.com/honjun, img: /img/social/github.png}
-  sina: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/sina.png}
-  wangyiyun: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/wangyiyun.png}
-  zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png}
-  email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
-  wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+# Your Site Build Founded Time or DATE 
+# your site creation date [change] 
+siteBuildingTime : 07/17/2018
 
-# 社交按钮(msocial)  url, img 移动端配置 【改】
-msocial:
-  github: {url: http://github.com/honjun, fa: fa-github, color: 333}
-  weibo: {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
-  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
 
-# 赞赏二维码（其中wechatSQ是赞赏单页面的赞赏码图片）【改】
-donate:
-  alipay: /img/custom/donate/AliPayQR.jpg
-  wechat: /img/custom/donate/WeChanQR.jpg
-  wechatSQ: /img/custom/donate/WeChanSQ.jpg
+# Social buttons (social) url, img PC side configuration change] [ 
+social :
+   GitHub : {URL: http://github.com/honjun, IMG: /img/social/github.png} 
+  siNA : {URL: HTTP: //weibo.com/mashirozx?is_all=1, img: /img/social/sina.png} 
+  wangyiyun : {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/wangyiyun .png} 
+  zhihu : {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png} 
+  email : {url: http://weibo.com/mashirozx?is_all= 1, img: /img/social/email.svg} 
+  wechat : {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
 
-# 首页视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下 【改】
-movies:
-  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
-  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
-  name: Unbroken.mp4
+# Social buttons (msocial) url, img [changes] the mobile terminal configured 
+msocial :
+   GitHub : {URL: http://github.com/honjun, FA: FA-GitHub, Color: 333} 
+  Weibo : {URL: HTTP: / /weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39} 
+  qq : {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: Fa-qq, color: 25c6fe}
 
-# 左下角aplayer播放器配置 主要改id和server这两项，修改详见[aplayer文档] 【改】
-aplayer: 
-  id: 2660651585
-  server: netease
-  type: playlist
-  fixed: true
-  mini: false
-  autoplay: false
-  loop: all
-  order: random
-  preload: auto
-  volume: 0.7
-  mutex: true
+# Appreciate the QR code (where wechatSQ is appreciated for the single page of the appreciation code picture) [Change] 
+donate :
+   alipay : /img/custom/donate/AliPayQR.jpg 
+  wechat : /img/custom/donate/WeChanQR.jpg 
+  wechatSQ : /img /custom/donate/WeChanSQ.jpg
 
-# Valine评论配置【改】
-valine: true
-v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
-v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
+#首页视频地址 is https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4, the configuration is as follows [change] 
+movies :
+  url : https://cdn.jsdelivr.net/gh/honjun/ hojun@1.2 
+  # multiple video separated by commas, random get. The supported formats are currently known as MP4, Flv. Others can be tried, not guaranteed to be useful 
+  name : Unbroken.mp4
+
+#下下角aplayer player configuration mainly change id and server these two, modify the details see [aplayer document] [change] 
+aplayer : 
+  id : 2660651585 
+  server : netease 
+  type : playlist 
+  fixed : true 
+  mini : false 
+  autoplay : false 
+  loop : all 
+  order : random 
+  preload : auto 
+  volume : 0.7 
+  mutex : true
+
+# Valine评论Configuration [Change] 
+valine : true 
+v_appId : GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz 
+v_appKey : mgOpfzbkHYqU92CV4IDlAUHQ
 ```
 
-## 分类页和标签页配置
+## Category page and tags page configuration
 
-咳咳，之前忘记说了，配置项在\themes\Sakura\languages\zh-cn.yml里。新增一个分类或标签最好加下哦，当然嫌麻烦可以直接使用一张默认图片（可以改主题或者直接把404图片替换下，征求下意见要不要给这个在配置文件中加个开关，可以issue或群里提出来），现在是没设置的话会使用那种倒立小狗404哦。
+### Category page
+![](https://ws3.sinaimg.cn/large/006bYVyvly1g07b0gucy9j31060jih76.jpg)
+### tags page
+![](https://wx2.sinaimg.cn/large/006bYVyvly1g07azb2399j31040jgazs.jpg)
+
+Configuration items are in \themes\Sakura\languages\zh-cn.yml. It is best to add a new category or label. Of course, you can use a default picture directly. (You can change the theme or directly replace the 404 picture. Ask for comments. Do you want to add a switch to the configuration file? Issue or group proposed), if you don't set it, you will use the inverted puppy 404.
 ```yml
-#category
-# 按分类名创建
-技术:
-    #中文标题
-    zh: 野生技术协会 
-    # 英文标题
-    en: Geek – Only for Love
-    # 封面图片
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg
-生活:
-    zh: 生活
-    en: live
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
+# Category 
+# Create a name by category 
+Technology :
+     # Chinese title 
+    zh : Wild Technology Association 
+    # English title 
+    EN : Geek - Only for Love 
+    # Cover Image 
+    img : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/ img / banner / coding.jpg 
+life :
+     zh : life 
+    EN : live 
+    img : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
 
-#tag
-# 标签名即是标题
-悦读:
-    # 封面图片
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
+# Tag 
+# tag name that is the title 
+pleasure reading :
+     # Cover Image 
+    img : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
 ```
-## 单页面配置
 
-### 番组计划页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）
+## Single page cover configuration
 
-```yml
+![](https://ws3.sinaimg.cn/large/006bYVyvly1g07b1pi619j31080jge4u.jpg)
+For example, on the message board page page, under the comment under source, open index.md as follows:
+```md
 ---
-layout: bangumi
-title: bangumi
-comments: false
-date: 2019-02-10 21:32:48
-keywords:
-description:
-bangumis:
-  # 番组图片
-  - img: https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg
-  # 番组名
-    title: 朝花夕誓——于离别之朝束起约定之花
-  # 追番状态 （追番ing/已追完）
-    status: 已追完
-  # 追番进度
-    progress: 100
-  # 番剧日文名称
-    jp: さよならの朝に約束の花をかざろう
-  # 放送时间
-    time: 放送时间: 2018-02-24 SUN.
-  # 番剧介绍
-    desc:  住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。
-  - img: https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg
-    title: 朝花夕誓——于离别之朝束起约定之花
-    status: 已追完
-    progress: 50
-    jp: さよならの朝に約束の花をかざろう
-    time: 放送时间: 2018-02-24 SUN.
-    desc: 住在远离尘嚣的土地，一边将每天的事情编织成名为希比欧的布，一边静静生活的伊欧夫人民。在15岁左右外表就停止成长，拥有数百年寿命的他们，被称为“离别的一族”，并被视为活着的传说。没有双亲的伊欧夫少女玛奇亚，过着被伙伴包围的平稳日子，却总感觉“孤身一人”。他们的这种日常，一瞬间就崩溃消失。追求伊欧夫的长寿之血，梅萨蒂军乘坐着名为雷纳特的古代兽发动了进攻。在绝望与混乱之中，伊欧夫的第一美女蕾莉亚被梅萨蒂带走，而玛奇亚暗恋的少年克里姆也失踪了。玛奇亚虽然总算逃脱了，却失去了伙伴和归去之地……。
+Title: comment
+Date: 2018 - 12 - 20  23 : 13 : 48
+Keywords: message board
+Description: 
+Comments: true
+# Configure a single page header image here, custom replacement oh~
+Photos: https://cdn.jsdelivr.net/gh/honjun/cdn@ 1.4 /img/banner/comment.jpg
 ---
 ```
 
-### 友链页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）
+
+## Single page configuration
+
+### Fan group plan page (please change directly in the downloaded file, the following comments may have some impact)
+![](https://wx2.sinaimg.cn/large/006bYVyvly1g07b2gyx60j31090jjahj.jpg)
 
 ```yml
 ---
-layout: links
-title: links
-# 创建日期，可以改下
-date: 2018-12-19 23:11:06 
-# 图片上的标题，自定义修改
-keywords: 友人帐 
-description: 
-# true/false 开启/关闭评论
-comments: true 
-# 页面头部图片，自定义修改
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/links.jpg 
-# 友链配置
-links: 
-  # 类型分组
-  - group: 个人项目
-    # 类型简介
-    desc: 充分说明这家伙是条咸鱼 < (￣︶￣)>
-    items:
-    # 友链链接
-    - url: https://shino.cc/fgvf
-    # 友链头像
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
-    # 友链站点名
-      name: Google
-    # 友链介绍  下面雷同
-      desc: Google 镜像
-    - url: https://shino.cc/fgvf
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
-      name: Google
-      desc: Google 镜像
-  # 类型分组...
-  - group: 小伙伴们
-    desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
-    items:
-    - url: https://shino.cc/fgvf
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
-      name: Google
-      desc: Google 镜像
-    - url: https://shino.cc/fgvf
-      img: https://cloud.moezx.cc/Picture/svg/landscape/fields.svg
-      name: Google
-      desc: Google 镜像
+ layout : bangumi 
+title : bangumi 
+comments : false 
+date : 2019-02-10 21:32:48 
+keywords :
+ description :
+ bangumis :
+   #番组图片 
+  - img : https://lain.bgm.tv/pic/cover /l/0e/1e/218971_2y351.jpg 
+  # Fan group name 
+    title : North Korea vows to spend the evening - the agreement with effect from the beam toward the parting flower 
+  # chase Fan state (fan chasing ing / chase has been completed) 
+    status : has finished chasing 
+  # Progression 
+    progress : 100 
+  #番剧 Japanese name 
+    jp :Sa yo na ra ni constraint towardsののflower wo ka za ro u 
+  # run time 
+    Time : running time:. 2018-02-24 SUN 
+  # Fan drama presentation 
+    desc :   stay away from the hubbub of the land, while the everyday things of woven fame as Xibi Ou Cloth, the people of Iofu who live quietly. At the age of 15 years old, they stopped growing. They have a life span of hundreds of years, and they are called "parting families" and are regarded as living legends. Iowe girl, who has no parents, is a stable day surrounded by her partners, but she always feels "one person." Their daily routine collapsed in an instant. Pursuing the blood of Iofu's longevity, the Mesati army launched an attack on an ancient beast called Renate. In desperation and chaos, Iofu’s first beauty, Leia, was taken away by Mesati, and the young Kym, who was secretly loved by Macchia, also disappeared. Although Macchia finally escaped, she lost her partner and where she left. 
+  - img : https://lain.bgm.tv/pic/cover/l/0e/1e/218971_2y351.jpg 
+    title : North Korea vows to spend the evening - in parting towards the beam from the flowers of the convention 
+    Status : has finished chasing 
+    Progress : 50 
+    JP : Connecticut published by starting raののflower toward wo ka ni constraint ro u za 
+    time : run time: 2018-02-24 SUN.
+    Desc : Living in a land far away from the dust, while weaving everyday things into a cloth called Hibbio, the Iofan people living quietly. At the age of 15 years old, they stopped growing. They have a life span of hundreds of years, and they are called "parting families" and are regarded as living legends. Iowe girl, who has no parents, is a stable day surrounded by her partners, but she always feels "one person." Their daily routine collapsed in an instant. Pursuing the blood of Iofu's longevity, the Mesati army launched an attack on an ancient beast called Renate. In desperation and chaos, Iofu’s first beauty, Leia, was taken away by Mesati, and the young Kym, who was secretly loved by Macchia, also disappeared. Although Macchia finally escaped, she lost her partner and where she left. 
 ---
 ```
 
-## 写文章配置
+### Friends chain page (please change directly in the downloaded file, the following comments may have some effect)
+![](https://ws3.sinaimg.cn/large/006bYVyvly1g07b39tleej31080jhjv1.jpg)
 
-主题集成了个人插件hexo-tag-bili和hexo-tag-fancybox_img。其中hexo-tag-bili用来在文章或单页面中插入B站外链视频，使用语法如下：
+```yml
+---
+layout : links 
+title : links 
+# creation date can be changed at 
+DATE : 2018-12-19 23:11:06 
+# title on the picture, custom modifications 
+keywords : friend account 
+the Description : 
+ # to true / false turn on / off comment 
+comments : to true  
+# page header image, custom modify 
+photos : https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/links.jpg 
+# Friends of the chain configuration 
+links : 
+   # type packets 
+  - Group : personal project 
+    # type Profile 
+    desc :Fully explain that this guy is a salted fish < ( ̄) ̄)> 
+    items :
+     #友链链接 
+    - url : https://shino.cc/fgvf 
+    #友链
+      头像img : https://cloud.moezx.cc/Picture /svg/landscape/fields.svg 
+    #友链
+      网站名name : Google 
+    #友链 Introduce the following similar 
+      desc : Google Mirror 
+    - url : https://shino.cc/fgvf 
+      img : https://cloud.moezx.cc/ Picture / SVG / Landscape / fields.svg 
+      name : Google 
+      desc : Google image 
+  # type packets ... 
+  - Group: Small partners 
+    desc : Welcome Friends of the chain exchange ꉂ ('ᗜ') 
+    items :
+    - url : https://shino.cc/fgvf 
+      img : https://cloud.moezx.cc/Picture/svg/landscape/fields.svg 
+      name : Google 
+      desc : Google Mirror 
+    - url : https://shino.cc /fgvf 
+      img : https://cloud.moezx.cc/Picture/svg/landscape/fields.svg 
+      name : Google 
+      desc : Google Mirror 
+---
+```
+
+## Write article configuration
+
+The theme integrates the personal plug-ins hexo-tag-bili and hexo-tag-fancybox_img. The hexo-tag-bili is used to insert the B-station external link video in the article or single page. The syntax is as follows:
 ```md
 {% bili video_id [page] %}
 ```
-详细使用教程详见[hexo-tag-bili](https://github.com/honjun/hexo-tag-bili/blob/master/README-zh_cn.md)。
+See the [hexo-tag-bili](https://github.com/honjun/hexo-tag-bili/blob/master/README-zh_cn.md) for a detailed tutorial .
 
-hexo-tag-fancybox_img用来在文章或单页面中图片，使用语法如下：
+Hexo-tag-fancybox_img is used to view images in articles or single pages. The syntax is as follows:
 ```md
 {% fb_img src [caption] %}
 ```
-详细使用教程详见[hexo-tag-fancybox_img](https://github.com/honjun/hexo-tag-fancybox_img/blob/master/README-zh_cn.md)
-
-## 还有啥，一时想不起来......
+See the [hexo-tag-fancybox_img](https://github.com/honjun/hexo-tag-fancybox_img/blob/master/README-zh_cn.md)
+ for a detailed tutorial.
+ 
+## Also, I can’t remember it for a moment...
 
 To be continued...
