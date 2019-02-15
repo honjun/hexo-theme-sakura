@@ -1,4 +1,4 @@
-hexo-theme-sakura主题 [中文文档](123)
+hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-sakura/blob/master/README.md)
 
 基于WordPress主题[Sakura](https://github.com/mashirozx/Sakura/)修改成Hexo的主题。
 

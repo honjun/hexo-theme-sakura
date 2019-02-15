@@ -2,7 +2,7 @@ hexo-theme-sakura [中文文档](https://github.com/honjun/hexo-theme-sakura/blo
 
 Based on the WordPress theme [Sakura](https://github.com/mashirozx/Sakura/) modified into Hexo theme.
 
-【Demo preview](https://sakura.hojun.cn)
+[Demo preview](https://sakura.hojun.cn)
 
 in development......
 
@@ -341,7 +341,7 @@ Hexo-tag-fancybox_img is used to view images in articles or single pages. The sy
 ```
 See the [hexo-tag-fancybox_img](https://github.com/honjun/hexo-tag-fancybox_img/blob/master/README-zh_cn.md)
  for a detailed tutorial.
- 
+
 ## Also, I can’t remember it for a moment...
 
 To be continued...
