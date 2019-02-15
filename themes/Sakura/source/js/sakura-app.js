@@ -32,6 +32,7 @@ mashiro_global.ini = new function () {
         lazyload();
         social_share();
         mashiro_global.post_list_show_animation.ini();
+        copy_code_block();
         if (window.is_app) {
             try {
                 setTimeout(function () {
@@ -72,6 +73,7 @@ mashiro_global.ini = new function () {
         pjaxInit();
         social_share();
         mashiro_global.post_list_show_animation.ini();
+        copy_code_block();
         if ($("div").hasClass("poem-wrap")) {
             get_poem('#poem', '#info')
         }
@@ -272,6 +274,7 @@ function code_highlight_style() {
         gen_top_bar(i);
     }
     $('pre').on('click', function (e) {
+        if (e.target !== this) return;
         $(this).toggleClass('code-block-fullscreen');
         $('html').toggleClass('code-block-fullscreen-html-scroll');
     });
@@ -280,6 +283,15 @@ function code_highlight_style() {
 try {
     code_highlight_style();
 } catch (e) {}
+
+function copy_code_block() {
+    $('pre code').each(function (i, block) {
+        $(block).attr({ id: 'hljs-' + i });
+        $(this).after('<a class="copy-code" href="javascript:" data-clipboard-target="#hljs-' + i + '" title="拷贝代码"><i class="fa fa-clipboard" aria-hidden="true"></i></a>');
+    });
+    var clipboard = new ClipboardJS('.copy-code');
+}
+
 function attach_image() {
     $('#upload-img-file').change(function () {
         if (this.files.length > 10) {

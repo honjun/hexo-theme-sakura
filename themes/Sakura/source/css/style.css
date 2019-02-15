@@ -7278,6 +7278,7 @@ to {
     z-index:2
 }
 .highlight-wrap {
+    position: relative;
     background:#21252b;
     border-radius:5px;
     font:15px/22px "Microsoft YaHei","Arial",Sans-Serif;
@@ -7795,4 +7796,18 @@ td.hljs-ln-numbers {
 }
 #page {
     min-height: calc(100vh - 150px);
+}
+.entry-content * {
+    box-sizing: border-box;
+}
+.entry-content pre.highlight-wrap .copy-code {
+    color: #fff;
+    position: absolute;
+    float: right;
+    right: 10px;
+    top: 0;
+    padding-top: 4px;
+    padding-right: 2px;
+    z-index: 2;
+    font-size: 16px;
 }

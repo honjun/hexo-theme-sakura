@@ -1,6 +1,6 @@
-hexo-theme-sakura主题
+hexo-theme-sakura主题 [中文文档](123)
 
-基于WordPress主题[Sakura](https://github.com/mashirozx/Sakura/)主题修改成Hexo的主题。
+基于WordPress主题[Sakura](https://github.com/mashirozx/Sakura/)修改成Hexo的主题。
 
 [demo预览](https://sakura.hojun.cn)
 
@@ -16,12 +16,12 @@ hexo-theme-sakura主题
 
 ## 主题特性
 
- - 首页视频
+ - 首页大屏视频
  - 首页随机封面
  - 图片懒加载
  - valine评论
  - fancy-box相册
- - pjax支持
+ - pjax支持，音乐不间断
  - aplayer音乐播放器
  - 多级导航菜单（按现在大部分hexo主题来说，这也算是个特性了）
 
@@ -194,7 +194,12 @@ v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
 
 ## 分类页和标签页配置
 
-咳咳，之前忘记说了，配置项在\themes\Sakura\languages\zh-cn.yml里。新增一个分类或标签最好加下哦，当然嫌麻烦可以直接使用一张默认图片（可以改主题或者直接把404图片替换下，征求下意见要不要给这个在配置文件中加个开关，可以issue或群里提出来），现在是没设置的话会使用那种倒立小狗404哦。
+### 分类页
+![](https://ws3.sinaimg.cn/large/006bYVyvly1g07b0gucy9j31060jih76.jpg)
+### 标签页
+![](https://wx2.sinaimg.cn/large/006bYVyvly1g07azb2399j31040jgazs.jpg)
+
+配置项在\themes\Sakura\languages\zh-cn.yml里。新增一个分类或标签最好加下哦，当然嫌麻烦可以直接使用一张默认图片（可以改主题或者直接把404图片替换下，征求下意见要不要给这个在配置文件中加个开关，可以issue或群里提出来），现在是没设置的话会使用那种倒立小狗404哦。
 ```yml
 #category
 # 按分类名创建
@@ -216,9 +221,28 @@ v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
     # 封面图片
     img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/reading.jpg
 ```
+
+## 单页面封面配置
+
+![](https://ws3.sinaimg.cn/large/006bYVyvly1g07b1pi619j31080jge4u.jpg)
+如留言板页面页面，位于source下的comment下，打开index.md如下：
+```md
+---
+title: comment
+date: 2018-12-20 23:13:48
+keywords: 留言板
+description: 
+comments: true
+# 在这里配置单页面头部图片，自定义替换哦~
+photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
+---
+```
+
+
 ## 单页面配置
 
 ### 番组计划页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）
+![](https://wx2.sinaimg.cn/large/006bYVyvly1g07b2gyx60j31090jjahj.jpg)
 
 ```yml
 ---
@@ -254,6 +278,7 @@ bangumis:
 ```
 
 ### 友链页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）
+![](https://ws3.sinaimg.cn/large/006bYVyvly1g07b39tleej31080jhjv1.jpg)
 
 ```yml
 ---
