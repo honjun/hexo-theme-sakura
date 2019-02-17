@@ -45,6 +45,7 @@ hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-
 
 ### 博客根目录下的_config配置
 
+站点
 ```yml
 # Site
 title: 你的站点名
@@ -56,6 +57,7 @@ language: zh-cn
 timezone:
 ```
 
+部署
 ```yml
 deploy:
   type: git
@@ -63,6 +65,18 @@ deploy:
     github: 你的github仓库地址
     # coding: 你的coding仓库地址
   branch: master
+```
+
+备份 （使用hexo b发布备份到远程仓库）
+```yml
+backup:
+  type: git
+  message: backup my blog of https://honjun.github.io/
+  repository:
+    # 你的github仓库地址,备份分支名  （建议新建backup分支）
+    github: https://github.com/honjun/honjun.github.io.git,backup
+    # coding: https://git.coding.net/hojun/hojun.git,backup
+
 ```
 
 ### 主题目录下的_config配置

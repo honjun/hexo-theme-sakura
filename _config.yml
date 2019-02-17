@@ -85,6 +85,14 @@ deploy:
     coding: https://git.coding.net/hojun/hojun.git
   branch: master
 
+# backup
+backup:
+  type: git
+  message: backup my blog of https://yourname.github.io/
+  repository:
+    # github: https://github.com/honjun/honjun.github.io.git,backup
+    coding: https://git.coding.net/hojun/hojun.git,backup
+
 #RSS
 feed:
   type: atom
