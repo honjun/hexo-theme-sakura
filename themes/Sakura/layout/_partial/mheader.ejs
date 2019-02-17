@@ -5,8 +5,8 @@
   <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px"><%- theme.prefixName%><%- theme.siteName%></p>
   <p style="text-align: center; word-spacing: 20px;">
     <% if (theme.msocial) {%>
-      <% for (i in theme.msocial) {%>
-        <a href="<%- theme.msocial[i].url%>" class="fa <%- theme.msocial[i].fa%>" target="_blank" style="color: #<%- theme.msocial[i].color%>; margin-left:20px">
+      <% for (var i in theme.msocial) {%>
+        <a href="<%- theme.msocial[i].url%>" class="fa <%- theme.msocial[i].fa%>" target="_blank" style="color: #<%- theme.msocial[i].color%>; margin-left:20px"></a>
       <% } %>
     <% } %>
   </p>
