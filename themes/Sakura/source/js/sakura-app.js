@@ -1077,6 +1077,18 @@ mashiro_global.ini.normalize();
 var home = location.href,
     s = $('#bgvideo')[0],
     Siren = {
+        VA: function () {
+            if (!valine) {
+                var valine = new Valine();
+                valine.init({
+                    el: '#vcomments',
+                    appId: mashiro_option.v_appId,
+                    appKey: mashiro_option.v_appKey,
+                    path: window.location.pathname,
+                    placeholder: "你是我一生只会遇见一次的惊喜 ..."
+                })
+            }
+        },
         MN: function () {
             $('.iconflat').on('click', function () {
                 if ($("#main-container").hasClass("open")) {
@@ -1502,6 +1514,7 @@ $(function () {
             Siren.AH();
             Siren.PE();
             Siren.CE();
+            Siren.VA();
             if (mashiro_option.NProgressON) NProgress.done();
             mashiro_global.ini.pjax();
             $("#loading").fadeOut(500);

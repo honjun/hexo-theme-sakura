@@ -4851,7 +4851,7 @@ h3#comments-list-title,nav#comments-navi {
     transition:all .3s ease
 }
 .wrapper section {
-    max-width:600px
+    /*max-width:600px*/
 }
 .wrapper section h1 {
     font-weight:300;
