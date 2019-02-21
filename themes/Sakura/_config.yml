@@ -8,6 +8,8 @@ url: https://sakura.hojun.cn
 description: Live your life with passion! With some drive!
 cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 pjax: 1
+# 1开启
+mathjax: 0
 
 notice: hexo-Sakura主题已经开源，目前正在开发中...
 lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg

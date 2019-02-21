@@ -15,8 +15,7 @@
             </a>
           </span>
           <span>
-            <a href="<%- post.authorLink%>">
-            hojun</a>
+            <a href="<%- post.authorLink%>"><%- post.author %></a>
           </span>
           <span class="bull">
           ·</span>
@@ -111,11 +110,11 @@
       <%- partial('_partial/comment') %>
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="<%- post.authorLink %>" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image" alt="hojun" height="70" width="70"></a>
+          <a href="<%- post.authorLink %>" class="profile gravatar"><img src="<%- post.avatar%>" itemprop="image" alt="<%- post.author %>" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="<%- post.authorLink%>" itemprop="url" rel="author">hojun</a>
+            <a href="<%- post.authorLink%>" itemprop="url" rel="author"><%- post.author %></a>
             </h3>
           </div>
         </div>
@@ -127,3 +126,9 @@
 </div>
 <!-- 不蒜子 网页计数器 -->
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<% if (post.mathjax) { %>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+<% } %>
