@@ -629,8 +629,9 @@ to {
     z-index:9999
 }
 @charset "utf-8";
-    #content {
-    animation:main 1s
+#content {
+    animation:main 1s;
+    position: relative;
 }
 .headertop,.pattern-center {
     animation:header 1s
@@ -3851,6 +3852,7 @@ li.feature-2 {
 }
 @media(max-width:860px) {
     .notice {
+        display: none;
         margin-top:40px;
         margin-bottom:20px
     }
@@ -3861,6 +3863,10 @@ li.feature-2 {
     }
     .video-stu {
         display: none;
+    }
+    .headertop-bar::after {
+        height: 2.375rem !important;
+        bottom: -0.999rem !important;
     }
 }
 .headertop::before {
@@ -7810,4 +7816,24 @@ td.hljs-ln-numbers {
     padding-right: 2px;
     z-index: 2;
     font-size: 16px;
+}
+.toc {
+    width: 200px;
+    height: auto;
+    z-index: 98;
+    background-color: rgba(255,255,255,0);
+    transform: translateX(0);
+    right: calc((100% - 950px - 250px) / 2);
+    top:10px;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.toc-fixed {
+    position: fixed !important;
+    top: 85px;
+}
+
+@media(max-width:1200px) {
+    .toc {display: none;}
 }

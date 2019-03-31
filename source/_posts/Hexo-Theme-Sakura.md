@@ -27,12 +27,18 @@ photos: https://wx2.sinaimg.cn/large/006bYVyvgy1fqmv0mlsktj31400u0avk.jpg
 ![](https://ws4.sinaimg.cn/large/006bYVyvly1fxxfs6y2p3j30ya0jkdvo.jpg)
 
 ## 安装krpano
+### 安装krpano
+#### 安装krpano
+##### 安装krpano
 
 下载好后，双击安装到目录（自定义）。
 ![](https://ws3.sinaimg.cn/large/006bYVyvly1fxxfxam5wnj30je0ai415.jpg)
 安装好后如下图
 ![](https://ws2.sinaimg.cn/large/006bYVyvly1fxxg9jj5qhj30jh0cejzv.jpg)
 ## 使用krpano
+### 使用krpano
+### 使用krpano
+### 使用krpano
 
 使用教程可以参考krpano360的。
 ![](https://wx2.sinaimg.cn/large/006bYVyvly1fxxgaq43fxj30yg0jle2c.jpg)

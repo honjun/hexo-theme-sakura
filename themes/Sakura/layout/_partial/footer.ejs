@@ -29,6 +29,7 @@
 
 
 
+<!-- <script src="/js/tocbot.js"></script> -->
 <script type="text/javascript" src="/js/lib.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script type="text/javascript" src="/js/InsightSearch.js"></script>
@@ -37,6 +38,7 @@
 <script type="text/javascript" src="/js/sakura-app.js"></script>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
 <script type="text/javascript">
 /* <![CDATA[ */
 if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
@@ -46,4 +48,30 @@ if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 }
 /* ]]> */
 
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.toc', // 放置目录的容器
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.entry-content', // 正文内容所在
+        // Which headings to grab inside of the contentSelector element.
+        scrollSmooth: true,
+        headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+        headingsOffset: -400,
+        scrollSmoothOffset: -85
+    });
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
 </script>

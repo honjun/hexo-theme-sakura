@@ -1,34 +1,36 @@
-  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-  <div class="pattern-center-blank"></div>
-  <% if (post.photos && post.photos.length){ %>
-    <div class="pattern-center single-center">
-      <!-- 有配图默认渲染第一张 -->
-      <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
-      </div>
-      <header class="pattern-header single-header">
-        <h1 class="entry-title">
-        <%- post.title %></h1>
-        <p class="entry-census">
-          <span>
-            <a href="<%- post.authorLink%>">
-              <img src="<%- post.avatar%>">
-            </a>
-          </span>
-          <span>
-            <a href="<%- post.authorLink%>"><%- post.author %></a>
-          </span>
-          <span class="bull">
-          ·</span>
-          <%= date(post.date, 'YYYY-M-D') %><span class="bull">
-          ·</span>
-        <span id="busuanzi_value_page_pv"></span>次阅读</p>
-      </header>
+<link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+<% if (post.photos && post.photos.length){ %>
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(<%= post.photos[0] %>);" src="<%- theme.lazyloadImg%>" data-src="<%= post.photos[0] %>">
     </div>
-  <% } %>
-  <div id="content" class="site-content"> <div id="primary" class="content-area">
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      <%- post.title %></h1>
+      <p class="entry-census">
+        <span>
+          <a href="<%- post.authorLink%>">
+            <img src="<%- post.avatar%>">
+          </a>
+        </span>
+        <span>
+          <a href="<%- post.authorLink%>"><%- post.author %></a>
+        </span>
+        <span class="bull">
+        ·</span>
+        <%= date(post.date, 'YYYY-M-D') %><span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+<% } %>
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      
       <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         <% if (!post.photos[0]){ %>
           <header class="entry-header">
@@ -62,9 +64,7 @@
         </footer><!-- .entry-footer -->
       </article>
       <!-- #post-## -->
-      <div class="toc-container" style="height: 1053px;">
       <div class="toc" style="background: none;"></div>
-      </div>
       <section class="post-squares nextprev">
         <% if (post.prev){ %>
           <% if (post.next) { %>
