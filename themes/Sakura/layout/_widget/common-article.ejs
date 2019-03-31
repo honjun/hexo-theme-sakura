@@ -35,7 +35,8 @@
         <% if (!post.photos[0]){ %>
           <header class="entry-header">
             <h1 class="entry-title"><%- post.title %></h1>
-            <p class="entry-census"><%= date(post.date, 'YYYY-M-D HH:MM') %></p>
+            <p class="entry-census"><%- post.author %>&nbsp;·&nbsp;<%= date(post.date, 'YYYY-M-D') %>&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+
             <hr>
           </header>
         <% } %>
@@ -124,8 +125,7 @@
     </main><!-- #main -->
   </div><!-- #primary -->
 </div>
-<!-- 不蒜子 网页计数器 -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 <% if (post.mathjax) { %>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/x-mathjax-config">
