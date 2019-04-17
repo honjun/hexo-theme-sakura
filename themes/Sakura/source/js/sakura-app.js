@@ -1326,7 +1326,7 @@ var home = location.href,
       $('body').on('click', '#pagination a', function () {
         $(this).addClass('loading').text('')
         $.ajax({
-          type: 'POST',
+          type: 'GET',
           url: $(this).attr('href') + '#main',
           success: function (data) {
             result = $(data).find('#main .post')

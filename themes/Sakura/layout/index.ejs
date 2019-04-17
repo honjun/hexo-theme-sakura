@@ -15,7 +15,7 @@
       <%- partial('_partial/archive', {pagination: 2, index: true}) %>
     </main>
       <!-- 首页默认取最最新文章集 -->
-    <% if (page.total > 1){ %>
+    <!-- <% if (page.total > 1){ %>
       <nav class="navigator">
         <% var prev_text = __('prev');var next_text = __('next');%>
         <%- paginator({
@@ -23,6 +23,9 @@
           next_text: next_text
         }) %>
       </nav>
-    <% } %>
+    <% } %> -->
   </div>
+  <% if (page.total > 1 && page.next_link){ %>
+    <div id="pagination"><a href="<%- url_for(page.next_link) %>" class="">Previous</a></div>
+  <% } %>
 </div>
