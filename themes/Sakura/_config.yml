@@ -102,7 +102,6 @@ aplayer:
   server: netease
   type: playlist
   fixed: true
-  mini: false
   autoplay: false
   loop: all
   order: random
