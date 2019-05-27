@@ -1,16 +1,17 @@
 <div class="blank" style="padding-top: 0px;"></div>
 <div id="content" class="site-content">
+  <% if (theme.notice) { %>
   <div class="notice" style="margin-top:60px">
     <i class="iconfont icon-notification">
     </i>
     <div class="notice-content"><%= theme.notice%></div>
   </div>
+  <% } %>
   <%- partial('_partial/startdash') %>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
       <h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;">
-      <i class="fa fa-envira" aria-hidden="true">
-      </i>
+      <i class="fa fa-envira" aria-hidden="true"></i>
       Discovery</h1>
       <%- partial('_partial/archive', {pagination: 2, index: true}) %>
     </main>
