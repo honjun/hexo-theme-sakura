@@ -12,7 +12,11 @@
       <p class="entry-census">
         <span>
           <a href="<%- post.authorLink%>">
-            <img src="<%- post.avatar%>">
+            <% if (post.avatar){ %>
+              <img src="<%- post.avatar%>">
+            <% }else{ %>
+              <img src="<%- theme.avatar%>">
+            <% } %>
           </a>
         </span>
         <span>
