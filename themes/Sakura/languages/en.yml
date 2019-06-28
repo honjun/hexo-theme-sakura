@@ -26,10 +26,3 @@ post_total_count: There are %d posts in total till now.
 read_more: Continue Reading →
 contents: Contents
 none: None
-insight:
-    hint: 'Type something...'
-    posts: 'Posts'
-    pages: 'Pages'
-    categories: 'Categories'
-    tags: 'Tags'
-    untitled: '(Untitled)'

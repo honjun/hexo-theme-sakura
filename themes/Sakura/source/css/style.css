@@ -639,9 +639,6 @@ to {
 .site-branding {
     animation:sitetop 1s
 }
-.searchbox,.site-top .lower,.header-user-avatar {
-    animation:searchbox 1s
-}
 .notice,.top-feature,.post-list-thumb,.post-list,.comments {
     animation:main .6s
 }
@@ -4186,12 +4183,7 @@ li.feature-2 {
     opacity:1;
     visibility:visible
 }
-.searchbox {
-    float:right;
-    height:75px;
-    line-height:75px;
-    margin-left:20px
-}
+
 .site-header.iconsearch {
     font-size:18px;
     font-size:1.125rem;
@@ -6312,7 +6304,7 @@ button.botui-actions-buttons-button {
     cursor:pointer
 }
 .changeSkin-gear span:before {
-    content:"切换主题 | Change Skin "
+    content:"切杢主题 | Change Skin "
 }
 @media(max-width:800px) {
     .changeSkin-gear span::before {
