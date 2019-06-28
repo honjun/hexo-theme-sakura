@@ -20,6 +20,7 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.1",
     "hexo-tag-bili": "^1.0.0",
-    "hexo-tag-fancybox_img": "^1.0.1"
+    "hexo-tag-fancybox_img": "^1.0.1",
+    "hexo-search-data-plugin": "^1.1.1"
   }
 }

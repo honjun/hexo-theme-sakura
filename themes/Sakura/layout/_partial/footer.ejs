@@ -25,6 +25,19 @@
       </p>
     </div>
   </div><!-- .site-info -->
+
+  <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+  opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" />
+    <div style="position: fixed; top: 16px; right: 16px;">
+      <img src="/search/img/cb-close.png"  id="cb-close-btn"/>
+    </div>
+  </div>
+  <div style="position: fixed; right: 16px; bottom: 20px;">
+    <img src="/search/img/cb-search.png"  id="cb-search-btn"  title="双击ctrl试一下"/>
+  </div>
+  <link rel="stylesheet" href="/search/css/cb-search.css">
+
 </footer>
 
 
@@ -39,6 +52,10 @@
 <!-- 不蒜子 网页计数器 -->
 <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<!-- 这里有不明bug,如果引入 js 则会自动加料导致语法错误,所以更名为jss -->
+<script type="text/javascript" src="/search/js/bootstrap3-typeahead.min.jss"></script>
+<script type="text/javascript" src="/search/js/cb-search.jss"></script>
+
 <script type="text/javascript">
 /* <![CDATA[ */
 if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
