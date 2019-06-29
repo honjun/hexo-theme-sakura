@@ -53,7 +53,7 @@ subtitle:
 description: 站点简介
 keywords:
 author: 作者名
-language: zh-cn
+language: zh-Hans
 timezone:
 ```
 
@@ -213,7 +213,7 @@ v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
 ### 标签页
 ![](https://wx2.sinaimg.cn/large/006bYVyvly1g07azb2399j31040jgazs.jpg)
 
-配置项在\themes\Sakura\languages\zh-cn.yml里。新增一个分类或标签最好加下哦，当然嫌麻烦可以直接使用一张默认图片（可以改主题或者直接把404图片替换下，征求下意见要不要给这个在配置文件中加个开关，可以issue或群里提出来），现在是没设置的话会使用那种倒立小狗404哦。
+配置项在\themes\Sakura\languages\zh-Hans.yml里。新增一个分类或标签最好加下哦，当然嫌麻烦可以直接使用一张默认图片（可以改主题或者直接把404图片替换下，征求下意见要不要给这个在配置文件中加个开关，可以issue或群里提出来），现在是没设置的话会使用那种倒立小狗404哦。
 ```yml
 #category
 # 按分类名创建

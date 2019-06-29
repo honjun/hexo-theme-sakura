@@ -8,7 +8,7 @@ subtitle:
 description: 好少年光芒万丈
 keywords:
 author: hojun
-language: zh-cn
+language: zh-Hans
 timezone:
 
 # URL
@@ -103,3 +103,12 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+#统计
+#https://github.com/theme-next/hexo-symbols-count-time
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false

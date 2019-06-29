@@ -26,3 +26,9 @@ post_total_count: There are %d posts in total till now.
 read_more: Continue Reading →
 contents: Contents
 none: None
+
+symbols:
+    count: Count
+    time: Time
+    countTotal: CountTotal
+    timeTotal: TimeTotal

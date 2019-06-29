@@ -33,6 +33,12 @@ contents: 文章目录
 
 none: 无
 
+symbols:
+    count: 字数
+    time: 阅读时长
+    countTotal: 总字数
+    timeTotal: 阅读总时长
+
 #category
 技术:
     zh: 野生技术协会

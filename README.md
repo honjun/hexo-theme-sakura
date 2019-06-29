@@ -52,7 +52,7 @@ subtitle :
 description : Site Profile 
 Keywords :
 author : Author name 
-language : en zh-cn 
+language : en zh-Hans
 timezone :
 ```
 
@@ -199,7 +199,7 @@ v_appKey : mgOpfzbkHYqU92CV4IDlAUHQ
 ### tags page
 ![](https://wx2.sinaimg.cn/large/006bYVyvly1g07azb2399j31040jgazs.jpg)
 
-Configuration items are in \themes\Sakura\languages\zh-cn.yml. It is best to add a new category or label. Of course, you can use a default picture directly. (You can change the theme or directly replace the 404 picture. Ask for comments. Do you want to add a switch to the configuration file? Issue or group proposed), if you don't set it, you will use the inverted puppy 404.
+Configuration items are in \themes\Sakura\languages\zh-Hans.yml. It is best to add a new category or label. Of course, you can use a default picture directly. (You can change the theme or directly replace the 404 picture. Ask for comments. Do you want to add a switch to the configuration file? Issue or group proposed), if you don't set it, you will use the inverted puppy 404.
 ```yml
 # Category 
 # Create a name by category 
