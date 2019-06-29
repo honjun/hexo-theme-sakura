@@ -27,6 +27,9 @@ read_more: Continue Reading →
 contents: Contents
 none: None
 
+discovery: Discovery
+find: START:DASH!!
+
 symbols:
     count: Count
     time: Time
