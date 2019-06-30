@@ -67,37 +67,36 @@ Deploy :
 
 ### _config configuration under the theme directory
 
-The part marked with [Change] is the need to modify the department, indicating that [Select] can be changed or not, and the part marked with [Non] is not changed.
+The part marked with [Change] is the need to modify the department, indicating that [Select] can be changed or not, and the part marked with [None] is not changed.
 ```yml
-# site name 
-#
-站名称[改] prefixName :さくら荘その
+# Site name [Change]
+prefixName :さくら荘その
 siteName : hojun
 
-# favicon and site master avatar 
-#站favicon and avatar input image path (the following configuration is the relative path of cdn, please fill in the full path without cdn, it is recommended to use jsdeliver to build a cdn, first download my cdn replacement The picture is OK, simple and convenient~) [Change] 
+# Favicon and site master avatar 
+# Favicon and avatar input image path (the following configuration is the relative path of cdn, please fill in the full path without cdn, it is recommended to use jsdeliver to build a cdn, first download my cdn replacement The picture is OK, simple and convenient~) [Change] 
 favicon : /images/favicon.ico 
 avatar : /img/custom/avatar.jpg
 
-#站url [Change] 
+# Site url [Change] 
 url : https://sakura.hojun.cn
 
-#站介绍(或个人
-签名符) [Change] description : Live your life with passion! With some drive!
+# Site description [Change] 
+description : Live your life with passion! With some drive!
 
-#站cdn, no is empty [change] If cdn is empty, some image addresses must be filled in the complete address, such as the previous avatar to fill https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/ img / Custom / avatar.jpg 
+# Site cdn, no is empty [change] If cdn is empty, some image addresses must be filled in the complete address, such as the previous avatar to fill https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/ img / Custom / avatar.jpg 
 CDN : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 
-#开启pjax [Select] 
+# Enable pjax [Select] 
 pjax : 1
 
-#
-站首页's announcement information [Change] notice : hexo-Sakura theme has been open source, currently under development...
+# Announcement information in home page [Change] 
+notice : hexo-Sakura theme has been open source, currently under development...
 
-#懒Loaded loading image [Select] 
+# Lazy loading image [Select] 
 lazyloadImg : https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
 
-#站菜单 Configuration [Select] 
+# Site menu configuration [Select] 
 menus :
    Home : { path: /, fa: fa-fort-awesome faa-shake } 
   Archive : { path: /archives, fa: fa-archive faa-shake, submenus: { 
@@ -124,16 +123,16 @@ menus :
   Client : { path: /client/, fa: fa-android faa-vertical } 
   RSS : { path: /atom.xml, fa: fa- Rss faa-pulse }
 
-# Home page sort type: -1: newer first,1: older first. [ 
-None ] homePageSortType : -1
+# Home page sort type: -1: newer first,1: older first. [None] 
+homePageSortType : -1
 
-# Home page article shown number) [非] 
+# Home page article shown number) [None] 
 homeArticleShown : 10
 
-#背景图片[Select] 
+# Background image[Select] 
 bgn : 8
 
-# startdash面板url, title, desc img [Change] 
+# Startdash url, title, desc img [Change] 
 startdash :
   - {url: /theme-sakura/, title: Sakura, desc: The site hexo theme, img: /img/startdash/sakura.md.png} 
   - {url: http://space.bilibili.com/271849279, Title: Bilibili, desc: blogger's b-station video, img: /img/startdash/bilibili.jpg} 
@@ -141,11 +140,11 @@ startdash :
 
 
 # Your Site Build Founded Time or DATE 
-# your site creation date [change] 
+# your site creation date [Change] 
 siteBuildingTime : 07/17/2018
 
 
-# Social buttons (social) url, img PC side configuration change] [ 
+# Social buttons (social) url, img PC side configuration [Change] [ 
 social :
    GitHub : {URL: http://github.com/honjun, IMG: /img/social/github.png} 
   siNA : {URL: HTTP: //weibo.com/mashirozx?is_all=1, img: /img/social/sina.png} 
@@ -154,7 +153,7 @@ social :
   email : {url: http://weibo.com/mashirozx?is_all= 1, img: /img/social/email.svg} 
   wechat : {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
 
-# Social buttons (msocial) url, img [changes] the mobile terminal configured 
+# Social buttons (msocial) url, img [Changes] the mobile terminal configured 
 msocial :
    GitHub : {URL: http://github.com/honjun, FA: FA-GitHub, Color: 333} 
   Weibo : {URL: HTTP: / /weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39} 
@@ -166,13 +165,13 @@ donate :
   wechat : /img/custom/donate/WeChanQR.jpg 
   wechatSQ : /img /custom/donate/WeChanSQ.jpg
 
-#首页视频地址 is https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4, the configuration is as follows [change] 
+# Video's url in home page is https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4, the configuration is as follows [Change] 
 movies :
   url : https://cdn.jsdelivr.net/gh/honjun/ hojun@1.2 
   # multiple video separated by commas, random get. The supported formats are currently known as MP4, Flv. Others can be tried, not guaranteed to be useful 
   name : Unbroken.mp4
 
-#下下角aplayer player configuration mainly change id and server these two, modify the details see [aplayer document] [change] 
+# aplayer player configuration mainly change id and server these two, modify the details see [aplayer document] [Change] 
 aplayer : 
   id : 2660651585 
   server : netease 
@@ -186,7 +185,7 @@ aplayer :
   volume : 0.7 
   mutex : true
 
-# Valine评论Configuration [Change] 
+# Valine comments configuration [Change] 
 valine : true 
 v_appId : GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz 
 v_appKey : mgOpfzbkHYqU92CV4IDlAUHQ
@@ -246,14 +245,14 @@ Photos: https://cdn.jsdelivr.net/gh/honjun/cdn@ 1.4 /img/banner/comment.jpg
 
 ```yml
 ---
- layout : bangumi 
+layout : bangumi 
 title : bangumi 
 comments : false 
 date : 2019-02-10 21:32:48 
 keywords :
  description :
  bangumis :
-   #番组图片 
+   # Bangumis image 
   - img : https://lain.bgm.tv/pic/cover /l/0e/1e/218971_2y351.jpg 
   # Fan group name 
     title : North Korea vows to spend the evening - the agreement with effect from the beam toward the parting flower 
@@ -261,7 +260,7 @@ keywords :
     status : has finished chasing 
   # Progression 
     progress : 100 
-  #番剧 Japanese name 
+  # Bangumi japanese name 
     jp :Sa yo na ra ni constraint towardsののflower wo ka za ro u 
   # run time 
     Time : running time:. 2018-02-24 SUN 
@@ -300,13 +299,12 @@ links :
     # type Profile 
     desc :Fully explain that this guy is a salted fish < ( ̄) ̄)> 
     items :
-     #友链链接 
     - url : https://shino.cc/fgvf 
-    #友链
-      头像img : https://cloud.moezx.cc/Picture /svg/landscape/fields.svg 
-    #友链
-      网站名name : Google 
-    #友链 Introduce the following similar 
+    # Avatar
+      img : https://cloud.moezx.cc/Picture /svg/landscape/fields.svg 
+    # Site name
+      name : Google 
+    # Introduce the following similar 
       desc : Google Mirror 
     - url : https://shino.cc/fgvf 
       img : https://cloud.moezx.cc/ Picture / SVG / Landscape / fields.svg 
