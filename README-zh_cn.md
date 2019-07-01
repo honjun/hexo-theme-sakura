@@ -402,3 +402,14 @@ aplayer:
   mutex: true
 ```
 aplayer配置可以自己自定义参数，且都会渲染出来，不局限于以上内容。参考aplayer文档添加参数或拿来实现自己一些特殊功能
+
+### 导航图标修改
+主题目录下的_config.yml中,包含`fa`选项可以调整图标
+
+[图标列表](https://fontawesome.com/v4.7.0/icons/)
+
+以address-book为例,将
+
+`<i class="fa fa-comment" aria-hidden="true"></i>`
+
+的`fa-comment`填入即可
