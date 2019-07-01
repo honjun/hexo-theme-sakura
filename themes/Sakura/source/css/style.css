@@ -1350,6 +1350,15 @@ a:hover,a:active {
 .site-header:hover.is-homepage .lower-cantiner {
     display:block
 }
+.site-header.is-homepage .hide-site-name{
+    display: none;
+}
+.site-header:hover.is-homepage .hide-site-name {
+    display: block;
+}
+.site-header.is-homepage.yya .hide-site-name {
+    display: block;
+}
 .yya {
     position:fixed;
     left:0;
@@ -3954,7 +3963,7 @@ li.feature-2 {
     top: 98px !important;
 }
 .top-social_v2 li {
-    margin-right: 0px !important; 
+    margin-right: 0px !important;
     cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto !important;
 }
 }

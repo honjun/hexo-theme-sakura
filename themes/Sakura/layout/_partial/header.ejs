@@ -1,6 +1,7 @@
 <header class="site-header no-select gizle sabit" role="banner">
   <div class="site-top">
     <div class="site-branding">
+      <% if(theme.hideSiteName) { %> <div class="hide-site-name"> <% } %>
       <span class="site-title">
         <span class="logolink moe-mashiro">
           <a href="/">
@@ -9,6 +10,7 @@
           </a>
         </span>
       </span>
+          <% if(theme.hideSiteName) { %> </div> <% } %>
     </div>
     <div class="searchbox search-form-submit">
       <i class="iconfont js-toggle-search iconsearch icon-search">
