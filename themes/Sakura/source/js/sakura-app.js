@@ -1086,13 +1086,11 @@ var home = location.href,
       }
     },
     AB: function () {
-      // if (window.location.pathname.indexOf('about') > -1) {
-      //   $.getScript('//cdn.jsdelivr.net/vue/latest/vue.min.js', function () {
-      //     $.getScript('//unpkg.com/botui/build/botui.min.js', function () {
-      //       bot_ui_ini()
-      //     })
-      //   })
-      // }
+      if (window.location.pathname.indexOf('about') > -1) {
+        $.getScript('/js/butoi.js', function () {
+          bot_ui_ini()  
+        })
+      }
     },
     VA: function () {
       if (!valine) {
