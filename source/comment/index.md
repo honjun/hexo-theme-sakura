@@ -7,10 +7,6 @@ comments: true
 photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
 ---
 {% raw %}
-<div class="toc-container">
-  <div class="toc" style="background: none;">
-  </div>
-</div>
 <div class="entry-content">
   <div class="poem-wrap">
     <div class="poem-border poem-left">

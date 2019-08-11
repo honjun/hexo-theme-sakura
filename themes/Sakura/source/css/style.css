@@ -3941,22 +3941,22 @@ li.feature-2 {
 }
 @media(max-width:860px) {
     #centerbg {
-    height:300px;
-    background-attachment:scroll
-}
-.focusinfo .header-tou img {
-    width: 100px !important;
-}
-.header-info {
-    width: 90% !important;
-}
-.header-info:before {
-    top: 98px !important;
-}
-.top-social_v2 li {
-    margin-right: 0px !important; 
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto !important;
-}
+        height:300px;
+        background-attachment:scroll
+    }
+    .focusinfo .header-tou img {
+        width: 100px !important;
+    }
+    .header-info {
+        width: 90% !important;
+    }
+    .header-info:before {
+        top: 98px !important;
+    }
+    .top-social_v2 li {
+        margin-right: 0px !important; 
+        cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/ayuda.cur),auto !important;
+    }
 }
 #bgvideo {
     position: absolute;

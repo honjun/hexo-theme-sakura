@@ -2,7 +2,7 @@
 </div>
 <div class="pattern-center ">
   <div class="pattern-attachment-img">
-    <img src="<%= page.photos %>" src="<%- theme.lazyloadImg%>" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    <img src="<%= page.photos %>" src="<%- theme.lazyloadImg %>" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
   </div>
   <header class="pattern-header ">
     <h1 class="entry-title">
@@ -70,7 +70,7 @@
       <div class="meta">
         <span class="title">Author</span>
         <h3 itemprop="name">
-        <a href="<%- theme.url%>" itemprop="url" rel="author">hojun</a>
+        <a href="<%- theme.url%>" itemprop="url" rel="author"><%- config.author %></a>
         </h3>
       </div>
     </div>
