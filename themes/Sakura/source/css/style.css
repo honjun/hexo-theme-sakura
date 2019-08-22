@@ -4978,7 +4978,7 @@ i.iconfont.js-toggle-search.iconsearch {
 #mo-nav ul {
     width:200px;
     height:auto;
-    margin:10px 9px
+    padding: 0px;
 }
 #mo-nav ul:hover li {
     color:rgba(255,255,255,.5)

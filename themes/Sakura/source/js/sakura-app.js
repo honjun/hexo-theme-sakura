@@ -1087,8 +1087,8 @@ var home = location.href,
     },
     AB: function () {
       if (window.location.pathname.indexOf('about') > -1) {
-        $.getScript('/js/butoi.js', function () {
-          bot_ui_ini()  
+        $.getScript('/js/botui.js', function () {
+          bot_ui_ini()
         })
       }
     },
