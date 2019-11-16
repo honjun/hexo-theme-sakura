@@ -3943,6 +3943,7 @@ li.feature-2 {
     }
     .focusinfo .header-tou img {
         width: 100px !important;
+        height: 100px !important;
     }
     .header-info {
         width: 90% !important;
