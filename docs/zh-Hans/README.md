@@ -1,20 +1,3 @@
----
-title: Hexo-Theme-Sakura
-author: hojun
-avatar: https://wx1.sinaimg.cn/large/006bYVyvgy1ftand2qurdj303c03cdfv.jpg
-authorLink: hojun.cn
-authorAbout: 一个好奇的人
-authorDesc: 一个好奇的人
-categories: 技术
-date: 2018-12-12 22:16:01
-comments: true
-tags: 
- - web
- - 悦读
-keywords: Sakura
-description: hexo-sakura主题使用教程
-photos: https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png
----
 hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-sakura/blob/master/README.md)
 
 基于WordPress主题[Sakura](https://github.com/mashirozx/Sakura/)修改成Hexo的主题。
@@ -375,3 +358,47 @@ hexo-tag-fancybox_img用来在文章或单页面中图片，使用语法如下�
 ## 还有啥，一时想不起来......
 
 To be continued...
+
+
+## 2019.6.1追加
+一直没时间更新readme，六一更新如下
+
+### zoom放大图片
+
+关于zoom点击放大图片功能，一直就有，不过readme里头没说明。
+修改Sakura\node_modules\marked\lib\marked.js的Renderer.prototype.image方法为
+```js
+Renderer.prototype.image = function(href, title, text) {
+  if (this.options.baseUrl && !originIndependentUrl.test(href)) {
+    href = resolveUrl(this.options.baseUrl, href);
+  }
+  var out = '<img data-action="zoom" src="' + href + '" alt="' + text + '"';
+  if (title) {
+    out += ' title="' + title + '"';
+  }
+  out += this.options.xhtml ? '/>' : '>';
+  return out;
+};
+```
+即可
+
+### 关闭公告
+
+配置公告为空或false，表示关闭公告
+notice: false
+
+### 动态配置aplayer
+```yml
+aplayer: 
+  id: 2660651585
+  server: netease
+  type: playlist
+  fixed: true
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
+```
+aplayer配置可以自己自定义参数，且都会渲染出来，不局限于以上内容。参考aplayer文档添加参数或拿来实现自己一些特殊功能
