@@ -54,15 +54,30 @@ hexo-theme-sakura主题 [English document](https://github.com/honjun/hexo-theme-
 
 ## 1、主题下载安装
 
-[hexo-theme-sakura](https://github.com/honjun/hexo-theme-sakura)建议下载压缩包格式，因为除了主题内容还有些source的配置对新手来说比较太麻烦，直接下载解压就省去这些麻烦咯。
+**下载**
 
-下载好后解压到博客根目录（不是主题目录哦，重复的选择替换）。接着在命令行（cmd、bash）运行`npm i`安装依赖。
+[hexo-theme-sakura](https://github.com/honjun/hexo-theme-sakura)下载压缩包格式，因为除了主题内容还有些source的配置对新手来说比较太麻烦，直接下载解压就省去这些麻烦。
+
+**解压**
+
+下载好后解压到`*博客根目录*`（不是主题目录哦，重复的选择替换）。
+
+**安装依赖**
+
+接着在命令行（cmd、bash）运行`npm i`安装依赖。
+
+```bash
+$ npm i
+```
 
 ## 2、主题配置
 
+我们建议你使用专业的编辑器进行修改，例如：[vscode](https://code.visualstudio.com/)
+
 ### 博客根目录下的_config配置
 
-站点
+#### 站点信息
+
 ```yml
 # Site
 title: 你的站点名
@@ -74,7 +89,10 @@ language: zh-cn
 timezone:
 ```
 
-部署
+#### 部署信息
+
+这段大概在`_config`的80行
+
 ```yml
 deploy:
   type: git
@@ -84,7 +102,14 @@ deploy:
   branch: master
 ```
 
-备份 （使用hexo b发布备份到远程仓库）
+#### 备份 
+
+（使用hexo b发布备份到远程仓库）
+
+我们为你直接提供了懒人式的备份配置，只需要修改下面的信息，大概在`_config`的88行
+
+推荐你使用分支的方式进行备份，在你的项目仓库新建一个名为backup的分支即可
+
 ```yml
 backup:
   type: git
@@ -93,23 +118,33 @@ backup:
     # 你的github仓库地址,备份分支名  （建议新建backup分支）
     github: https://github.com/honjun/honjun.github.io.git,backup
     # coding: https://git.coding.net/hojun/hojun.git,backup
-
 ```
 
 ### 主题目录下的_config配置
 
-其中标明【改】的是需要修改部门，标明【选】是可改可不改，标明【非】是不用改的部分
+> 注意：标明【改】的是需要修改部分，标明【选】是可改可不改，标明【非】是不用改的部分
+
+#### 站点名
+
 ```yml
 # site name
 # 站点名 【改】
 prefixName: さくら荘その
 siteName: hojun
+```
+#### 标签图标和头像
 
+```yml
 # favicon and site master avatar
 # 站点的favicon和头像 输入图片路径（下面的配置是都是cdn的相对路径，没有cdn请填写完整路径，建议使用jsdeliver搭建一个cdn啦，先去下载我的cdn替换下图片就行了，简单方便~）【改】
 favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
+```
 
+#### 站点相关
+> 注意：如果你不修改你的cdn地址，你将无法修改任何图片
+
+```yml
 # 站点url 【改】
 url: https://sakura.hojun.cn
 
@@ -127,7 +162,23 @@ notice: hexo-Sakura主题已经开源，目前正在开发中...
 
 # 懒加载的加载中图片 【选】
 lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
+```
 
+#### 菜单配置
+> 一个正确的格式：
+
+```yml
+menus:
+  菜单名: { path: url, fa: 图标}
+  菜单名: { path: rul, fa: 图标, 
+  submenus: { 
+    技术: {path: url, fa: 图标 }, 
+    生活: {path: url, fa: 图标 }  ##最后一个不能加逗号
+  } }
+  # 图标来自：https://fontawesome.com/icons
+```
+***
+```yml
 # 站点菜单配置 【选】
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
@@ -154,7 +205,10 @@ menus:
   } }
   客户端: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+```
 
+####  背景配置
+```yml
 # Home page sort type: -1: newer first，1: older first. 【非】
 homePageSortType: -1
 
@@ -163,6 +217,12 @@ homeArticleShown: 10
 
 # 背景图片 【选】
 bgn: 8
+
+bg:
+  - 格式
+
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
+bgclass: filter-dot
 
 # startdash面板 url, title, desc img 【改】
 startdash: 
@@ -175,7 +235,10 @@ startdash:
 # 你的站点建立日期 【改】
 siteBuildingTime: 07/17/2018
 
-
+```
+#### 社交配置
+这将会显示在主页上
+```yml
 # 社交按钮(social)  url, img PC端配置 【改】
 social:
   github: {url: http://github.com/honjun, img: /img/social/github.png}
@@ -190,13 +253,18 @@ msocial:
   github: {url: http://github.com/honjun, fa: fa-github, color: 333}
   weibo: {url: http://weibo.com/mashirozx?is_all=1, fa: fa-weibo, color: dd4b39}
   qq: {url: https://wpa.qq.com/msgrd?v=3&uin=954655431&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
-
+```
+#### 打赏二维码
+```yml
 # 赞赏二维码（其中wechatSQ是赞赏单页面的赞赏码图片）【改】
 donate:
   alipay: /img/custom/donate/AliPayQR.jpg
   wechat: /img/custom/donate/WeChanQR.jpg
   wechatSQ: /img/custom/donate/WeChanSQ.jpg
 
+```
+#### 首页媒体
+```yml
 # 首页视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下 【改】
 movies:
   url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
@@ -216,7 +284,12 @@ aplayer:
   preload: auto
   volume: 0.7
   mutex: true
+```
+#### 评论
+> 你需要在leancloud注册账号：https://www.leancloud.cn/
+> 然后获取id和秘钥
 
+```yml
 # Valine评论配置【改】
 valine: true
 v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
@@ -226,9 +299,10 @@ v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
 ## 分类页和标签页配置
 
 ### 分类页
-![](https://ws3.sinaimg.cn/large/006bYVyvly1g07b0gucy9j31060jih76.jpg)
+![分类页](https://ws3.sinaimg.cn/large/006bYVyvly1g07b0gucy9j31060jih76.jpg)
+图片丢失
 ### 标签页
-![](https://wx2.sinaimg.cn/large/006bYVyvly1g07azb2399j31040jgazs.jpg)
+![image](https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/sakura/screely-1584338586069.png)
 
 配置项在\themes\Sakura\languages\zh-cn.yml里。新增一个分类或标签最好加下哦，当然嫌麻烦可以直接使用一张默认图片（可以改主题或者直接把404图片替换下，征求下意见要不要给这个在配置文件中加个开关，可以issue或群里提出来），现在是没设置的话会使用那种倒立小狗404哦。
 ```yml
@@ -273,7 +347,7 @@ photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
 ## 单页面配置
 
 ### 番组计划页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）
-![](https://wx2.sinaimg.cn/large/006bYVyvly1g07b2gyx60j31090jjahj.jpg)
+![image](https://cdn.jsdelivr.net/gh/mrhuanhao/cdn/sakura/screely-1584338707998.png)
 
 ```yml
 ---
@@ -308,7 +382,9 @@ bangumis:
 ---
 ```
 
-### 友链页 （请直接在下载后的文件中改，下面的添加了注释可能会有些影响）
+### 友链页 
+>（请直接在下载后的文件中改，下面的添加了注释可能会有些影响）
+
 ![](https://ws3.sinaimg.cn/large/006bYVyvly1g07b39tleej31080jhjv1.jpg)
 
 ```yml
@@ -375,3 +451,47 @@ hexo-tag-fancybox_img用来在文章或单页面中图片，使用语法如下�
 ## 还有啥，一时想不起来......
 
 To be continued...
+
+
+## 2019.6.1追加
+一直没时间更新readme，六一更新如下
+
+### zoom放大图片
+
+关于zoom点击放大图片功能，一直就有，不过readme里头没说明。
+修改Sakura\node_modules\marked\lib\marked.js的Renderer.prototype.image方法为
+```js
+Renderer.prototype.image = function(href, title, text) {
+  if (this.options.baseUrl && !originIndependentUrl.test(href)) {
+    href = resolveUrl(this.options.baseUrl, href);
+  }
+  var out = '<img data-action="zoom" src="' + href + '" alt="' + text + '"';
+  if (title) {
+    out += ' title="' + title + '"';
+  }
+  out += this.options.xhtml ? '/>' : '>';
+  return out;
+};
+```
+即可
+
+### 关闭公告
+
+配置公告为空或false，表示关闭公告
+notice: false
+
+### 动态配置aplayer
+```yml
+aplayer: 
+  id: 2660651585
+  server: netease
+  type: playlist
+  fixed: true
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
+```
+aplayer配置可以自己自定义参数，且都会渲染出来，不局限于以上内容。参考aplayer文档添加参数或拿来实现自己一些特殊功能
