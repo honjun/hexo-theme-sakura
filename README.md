@@ -1,4 +1,4 @@
-hexo-theme-sakura [中文文档](https://github.com/honjun/hexo-theme-sakura/blob/master/README-zh_cn.md)
+hexo-theme-sakura [中文文档](./README-zh_cn.md)
 
 Based on the WordPress theme [Sakura](https://github.com/mashirozx/Sakura/) modified into Hexo theme.
 
