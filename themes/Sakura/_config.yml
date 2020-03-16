@@ -78,6 +78,7 @@ social:
   zhihu: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/zhihu.png}
   email: {url: http://weibo.com/mashirozx?is_all=1, img: /img/social/email.svg}
   wechat: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
+  wechat2: {url: /#, qrcode: /img/custom/wechat.jpg, img: /img/social/wechat.png}
 
 #social  url, img 移动端配置
 msocial:

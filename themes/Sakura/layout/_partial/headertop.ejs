@@ -16,7 +16,7 @@
           </li>
           <% if (theme.social) {%>
             <% for (i in theme.social) {%>
-              <% if (i == 'wechat') {%>
+              <% if (theme.social[i].qrcode) {%>
                 <li class="wechat">
                   <a href="<%= theme.social[i].url%>">
                     <img src="<%- (theme.cdn || '') + theme.social[i].img%>">
