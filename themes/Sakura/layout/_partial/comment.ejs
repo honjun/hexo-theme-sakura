@@ -13,3 +13,32 @@
   }
 </script>
 <% } %>
+
+<% if (theme.waline.enable && post.comments) { %>
+    <script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+    <div id="waline"></div>
+    <style>
+    #waline textarea {
+        box-sizing: border-box;
+        background: url("<%- url_for(theme.waline.background) %>") 100% 100% no-repeat;
+    }
+    </style>
+    <script>
+        Waline({
+              el: '#waline',
+              serverURL: '<%- theme.waline.serverURL %>',
+              pageSize: '<%- theme.waline.pageSize %>',
+              lang: '<% if (config.language == "zh-cn") {  %>zh-CN<% } else { %>en<% } %>',
+              requiredFields: ['nick','mail'], //设置必填项
+              placeholder: '<%= theme.waline.placeholder %>',
+              visitor: '<%- theme.waline.visitor %>',
+              emoji: [
+                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+                  'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+              ],
+              avatar: '<%- theme.waline.avatar %>',
+              dark: 'auto',
+            });
+    </script>
+<% } %>
