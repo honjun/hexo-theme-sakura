@@ -115,3 +115,15 @@ valine: true
 v_appId: GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz
 v_appKey: mgOpfzbkHYqU92CV4IDlAUHQ
 
+# Waline
+waline:
+  enable: false
+  serverURL: #服务端地址
+  visitor: false #统计阅读量
+  comment_count: true #统计评论数
+  avatar: mp # Gravatar style : mp/identicon/monsterid/wavatar/retro/hide
+  guest_info: nick #,mail,link # custom comment header
+  pageSize: 10
+  placeholder: 祝开开心心！ # Comment Box placeholder
+  requiredFields: [ 'nick','mail' ] #设置必填项
+  background: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif #输入框提示动画
